@@ -60,7 +60,7 @@ jobs:
         env:
           ZHIPU_API_KEY: ${{ secrets.ZHIPU_API_KEY }}
         run: node scripts/generate_report.mjs --input papers.json --output "docs/adult-adhd-${{ steps.date.outputs.target }}.html"
-        timeout-minutes: 15
+        timeout-minutes: 25
 
       - name: Generate index page
         run: node scripts/generate_index.mjs

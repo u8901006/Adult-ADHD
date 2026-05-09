@@ -2,10 +2,10 @@ import { readFileSync, writeFileSync, mkdirSync } from 'node:fs';
 import { dirname, resolve } from 'node:path';
 
 const API_BASE = process.env.ZHIPU_API_BASE || 'https://open.bigmodel.cn/api/coding/paas/v4';
-const MODEL_CHAIN = ['glm-5-turbo', 'glm-4.7', 'glm-4.7-flash'];
+const MODEL_CHAIN = ['glm-5-turbo', 'glm-4.7', 'glm-4.7-flash', 'glm-4-plus', 'glm-4-flash', 'glm-4'];
 const MAX_TOKENS = 50000;
-const API_TIMEOUT_MS = 480000;
-const MAX_RETRIES = 3;
+const API_TIMEOUT_MS = 120000;
+const MAX_RETRIES = 2;
 
 const SYSTEM_PROMPT = `你是成人注意力不足過動症（adult ADHD）領域的資深研究員與科學傳播者。你的任務是：
 1. 從提供的醫學文獻中，篩選出最具臨床意義與研究價值的成人 ADHD 論文
