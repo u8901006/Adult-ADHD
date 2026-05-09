@@ -2,7 +2,7 @@ import { readFileSync, writeFileSync, mkdirSync } from 'node:fs';
 import { dirname, resolve } from 'node:path';
 
 const API_BASE = process.env.ZHIPU_API_BASE || 'https://open.bigmodel.cn/api/coding/paas/v4';
-const MODEL_CHAIN = ['glm-5-turbo', 'glm-4.7', 'glm-4.7-flash', 'glm-4-plus', 'glm-4-flash', 'glm-4'];
+const MODEL_CHAIN = ['glm-5-turbo', 'glm-5.1', 'glm-4.7', 'glm-4.7-flash', 'glm-4-plus', 'glm-4-flash', 'glm-4'];
 const MAX_TOKENS = 50000;
 const API_TIMEOUT_MS = 120000;
 const MAX_RETRIES = 2;
