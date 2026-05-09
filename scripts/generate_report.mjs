@@ -209,6 +209,7 @@ ${papersText}
         }
 
         console.error(`[INFO] Analysis complete: ${(result.top_picks || []).length} top picks, ${(result.all_papers || []).length} total`);
+        result._model = model;
         return result;
       } catch (e) {
         if (e.name === 'TimeoutError' || e.name === 'AbortError') {
