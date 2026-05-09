@@ -1,0 +1,4 @@
+node_modules/
+papers.json
+.env
+.env.*
