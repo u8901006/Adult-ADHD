@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Adult ADHD Daily &middot; 成人 ADHD 文獻日報 &middot; 2026年6月17日</title>
+<meta name="description" content="2026年6月17日 成人注意力不足過動症文獻日報，由 AI 自動彙整 PubMed 最新論文"/>
+<style>
+:root{--bg:#f6f1e8;--surface:#fffaf2;--line:#d8c5ab;--text:#2b2118;--muted:#766453;--accent:#8c4f2b;--accent-soft:#ead2bf;--card-bg:color-mix(in srgb,var(--surface) 92%,white)}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+body{background:radial-gradient(circle at top,#fff6ea 0,var(--bg) 55%,#ead8c6 100%);color:var(--text);font-family:"Noto Sans TC","PingFang TC","Helvetica Neue",Arial,sans-serif;min-height:100vh;overflow-x:hidden}
+.container{position:relative;z-index:1;max-width:880px;margin:0 auto;padding:60px 32px 80px}
+header{display:flex;align-items:center;gap:16px;margin-bottom:52px;animation:fadeDown .6s ease both}
+.logo{width:48px;height:48px;border-radius:14px;background:var(--accent);display:flex;align-items:center;justify-content:center;font-size:22px;flex-shrink:0;box-shadow:0 4px 20px rgba(140,79,43,.25)}
+.header-text h1{font-size:22px;font-weight:700;color:var(--text);letter-spacing:-.3px}
+.header-meta{display:flex;gap:8px;margin-top:6px;flex-wrap:wrap;align-items:center}
+.badge{display:inline-block;padding:3px 10px;border-radius:20px;font-size:11px;letter-spacing:.3px}
+.badge-date{background:var(--accent-soft);border:1px solid var(--line);color:var(--accent)}
+.badge-count{background:rgba(140,79,43,.06);border:1px solid var(--line);color:var(--muted)}
+.badge-source{background:transparent;color:var(--muted);font-size:11px;padding:0 4px}
+.summary-card{background:var(--card-bg);border:1px solid var(--line);border-radius:24px;padding:28px 32px;margin-bottom:32px;box-shadow:0 20px 60px rgba(61,36,15,.06);animation:fadeUp .5s ease .1s both}
+.summary-card h2{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:1.6px;color:var(--accent);margin-bottom:16px}
+.summary-text{font-size:15px;line-height:1.8;color:var(--text)}
+.section{margin-bottom:36px;animation:fadeUp .5s ease both}
+.section-title{display:flex;align-items:center;gap:10px;font-size:17px;font-weight:700;color:var(--text);margin-bottom:16px;padding-bottom:12px;border-bottom:1px solid var(--line)}
+.section-icon{width:28px;height:28px;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:14px;flex-shrink:0;background:var(--accent-soft)}
+.news-card{background:var(--card-bg);border:1px solid var(--line);border-radius:24px;padding:22px 26px;margin-bottom:12px;box-shadow:0 8px 30px rgba(61,36,15,.04);transition:background .2s,border-color .2s,transform .2s}
+.news-card:hover{transform:translateY(-2px);box-shadow:0 12px 40px rgba(61,36,15,.08)}
+.news-card.featured{border-left:3px solid var(--accent)}
+.news-card.featured:hover{border-color:var(--accent)}
+.card-header{display:flex;align-items:center;gap:8px;margin-bottom:10px}
+.rank-badge{background:var(--accent);color:#fff7f0;font-weight:700;font-size:12px;padding:2px 8px;border-radius:6px}
+.emoji-icon{font-size:18px}
+.card-header-row{display:flex;align-items:center;gap:8px;margin-bottom:8px}
+.emoji-sm{font-size:14px}
+.news-card h3{font-size:15px;font-weight:600;color:var(--text);margin-bottom:8px;line-height:1.5}
+.journal-source{font-size:12px;color:var(--accent);margin-bottom:8px;opacity:.8}
+.news-card p{font-size:13.5px;line-height:1.75;color:var(--muted)}
+.utility-reason{font-size:12px!important;color:var(--accent)!important;opacity:.85;margin-top:4px}
+.card-footer{margin-top:12px;display:flex;flex-wrap:wrap;gap:6px;align-items:center}
+.tag{padding:2px 9px;background:var(--accent-soft);border-radius:999px;font-size:11px;color:var(--accent)}
+.news-card a{font-size:12px;color:var(--accent);text-decoration:none;opacity:.7;margin-left:auto}
+.news-card a:hover{opacity:1}
+.utility-high{color:#5a7a3a;font-size:11px;font-weight:600;padding:2px 8px;background:rgba(90,122,58,.1);border-radius:4px}
+.utility-mid{color:#9f7a2e;font-size:11px;font-weight:600;padding:2px 8px;background:rgba(159,122,46,.1);border-radius:4px}
+.utility-low{color:var(--muted);font-size:11px;font-weight:600;padding:2px 8px;background:rgba(118,100,83,.08);border-radius:4px}
+.utility-sm{font-size:10px}
+.pico-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:12px;padding:12px;background:rgba(255,253,249,.8);border-radius:14px;border:1px solid var(--line)}
+.pico-item{display:flex;gap:8px;align-items:baseline}
+.pico-label{font-size:10px;font-weight:700;color:#fff7f0;background:var(--accent);padding:2px 6px;border-radius:4px;flex-shrink:0}
+.pico-text{font-size:12px;color:var(--muted);line-height:1.4}
+.keywords-section{margin-bottom:36px}
+.keywords{display:flex;flex-wrap:wrap;gap:8px;margin-top:8px}
+.keyword{padding:5px 14px;background:var(--accent-soft);border:1px solid var(--line);border-radius:20px;font-size:12px;color:var(--accent);cursor:default;transition:background .2s}
+.keyword:hover{background:rgba(140,79,43,.18)}
+.topic-section{margin-bottom:36px}
+.topic-row{display:flex;align-items:center;gap:10px;margin-bottom:8px}
+.topic-name{font-size:13px;color:var(--muted);width:120px;flex-shrink:0;text-align:right}
+.topic-bar-bg{flex:1;height:8px;background:var(--line);border-radius:4px;overflow:hidden}
+.topic-bar{height:100%;background:linear-gradient(90deg,var(--accent),#c47a4a);border-radius:4px;transition:width .6s ease}
+.topic-count{font-size:12px;color:var(--accent);width:24px}
+.links-section{margin-top:48px;display:flex;flex-direction:column;gap:12px;animation:fadeUp .5s ease .4s both}
+.link-card{display:flex;align-items:center;gap:14px;padding:18px 24px;background:var(--card-bg);border:1px solid var(--line);border-radius:24px;text-decoration:none;color:var(--text);transition:all .2s;box-shadow:0 8px 30px rgba(61,36,15,.04)}
+.link-card:hover{border-color:var(--accent);transform:translateY(-2px);box-shadow:0 12px 40px rgba(61,36,15,.08)}
+.link-icon{font-size:28px;flex-shrink:0}
+.link-name{font-size:15px;font-weight:700;color:var(--text);flex:1}
+.link-desc{font-size:12px;color:var(--muted);margin-top:2px}
+.link-arrow{font-size:18px;color:var(--accent);font-weight:700}
+footer{margin-top:32px;padding-top:22px;border-top:1px solid var(--line);font-size:11.5px;color:var(--muted);display:flex;justify-content:space-between;animation:fadeUp .5s ease .5s both}
+footer a{color:var(--muted);text-decoration:none}
+footer a:hover{color:var(--accent)}
+@keyframes fadeDown{from{opacity:0;transform:translateY(-16px)}to{opacity:1;transform:translateY(0)}}
+@keyframes fadeUp{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}
+@media(max-width:600px){.container{padding:36px 18px 60px}.summary-card,.news-card{padding:20px 18px}.pico-grid{grid-template-columns:1fr}footer{flex-direction:column;gap:6px;text-align:center}.topic-name{width:80px;font-size:11px}.links-section{gap:10px}.link-card{padding:14px 18px}}
+</style>
+</head>
+<body>
+<div class="container">
+  <header>
+    <div class="logo">🧠</div>
+    <div class="header-text">
+      <h1>Adult ADHD Daily &middot; 成人 ADHD 文獻日報</h1>
+      <div class="header-meta">
+        <span class="badge badge-date">📅 2026年6月17日（週三）</span>
+        <span class="badge badge-count">📊 10 篇文獻</span>
+        <span class="badge badge-source">Powered by PubMed + Zhipu AI</span>
+      </div>
+    </div>
+  </header>
+
+  <div class="summary-card">
+    <h2>📋 今日文獻趨勢</h2>
+    <p class="summary-text">今日文獻聚焦於成人 ADHD 的診斷精準度與臨床特殊性，涵蓋了女性共病漏診、裝病鑑別、基因檢測實務，以及美國成人刺激素處方趨勢，顯示出領域正朝向更精細化的個別化評估與用藥安全邁進。</p>
+  </div>
+
+  <div class="section"><div class="section-title"><span class="section-icon">⭐</span>今日精選 TOP Picks</div>
+    <div class="news-card featured">
+      <div class="card-header">
+        <span class="rank-badge">#1</span>
+        <span class="emoji-icon">👩‍⚕️</span>
+        <span class="utility-high">高實用性</span>
+      </div>
+      <h3>憂鬱與焦慮女性中的 ADHD 共病：盛行率、臨床特徵與超專注動力學</h3>
+      <p class="journal-source">International journal of psychiatry in medicine &middot; ADHD Comorbidity in Women with Depression and Anxiety: Prevalence, Clinical Features and Hyperfocus Dynamics.</p>
+      <p>在憂鬱或焦慮女性門診患者中，近 20% 共病 ADHD 且超過 45% 過去未被診斷，臨床師應將超專注特徵納入評估但不可單獨作為診斷準則。</p>
+      
+      <div class="pico-grid">
+        <div class="pico-item"><span class="pico-label">P</span><span class="pico-text">患有憂鬱症或焦慮症的女性門診患者（n=170）</span></div>
+        <div class="pico-item"><span class="pico-label">I</span><span class="pico-text">使用 WURS、超專注量表與成人 ADHD DSM-IV 篩檢量表進行評估，輔以結構式臨床訪談</span></div>
+        <div class="pico-item"><span class="pico-label">C</span><span class="pico-text">無對照組（描述性橫斷面研究）</span></div>
+        <div class="pico-item"><span class="pico-label">O</span><span class="pico-text">19.6% 共病 ADHD，其中 45.5% 為過去未確診；在非 ADHD 組中，超專注分數與 ADHD 症狀分數呈顯著正相關</span></div>
+      </div>
+      <p class="utility-reason">💡 直接點出女性 ADHD 在精神科門診的高漏診率，並釐清「超專注」症狀的臨床解讀，具備立即的篩檢指導價值。</p>
+      <div class="card-footer">
+        <span class="tag">女性ADHD</span><span class="tag">共病症</span><span class="tag">憂鬱症</span><span class="tag">焦慮症</span><span class="tag">診斷評估</span>
+        <a href="https://pubmed.ncbi.nlm.nih.gov/40934870/" target="_blank" rel="noopener">閱讀原文 →</a>
+      </div>
+    </div>
+    <div class="news-card featured">
+      <div class="card-header">
+        <span class="rank-badge">#2</span>
+        <span class="emoji-icon">🔍</span>
+        <span class="utility-high">高實用性</span>
+      </div>
+      <h3>尋找真實的成人 ADHD：應對裝病診斷挑戰的回顧</h3>
+      <p class="journal-source">Journal of affective disorders &middot; The quest to find genuine adult ADHD: Navigating diagnostic challenges of malingering - a review.</p>
+      <p>成人 ADHD 症狀量表容易受到偽裝操弄，研究支持在多方法評估框架下導入 TOMM 或 WMT 等效度測驗，以有效鑑別裝病行為。</p>
+      
+      <div class="pico-grid">
+        <div class="pico-item"><span class="pico-label">P</span><span class="pico-text">接受成人 ADHD 評估的個案（包含疑似裝病者與真實 ADHD 患者）</span></div>
+        <div class="pico-item"><span class="pico-label">I</span><span class="pico-text">使用績效效度測驗（如 TOMM, WMT, LMT, DMT, NV-MSVT）結合多方法評估框架</span></div>
+        <div class="pico-item"><span class="pico-label">C</span><span class="pico-text">僅依賴自報症狀量表或單一評估方法</span></div>
+        <div class="pico-item"><span class="pico-label">O</span><span class="pico-text">自報量表易受操弄；績效效度測驗能有效幫助區分真實 ADHD 與不可信的表現</span></div>
+      </div>
+      <p class="utility-reason">💡 提供具體的效度測驗工具清單與操作建議，解決成人 ADHD 診斷中為了取得藥物或適性保障而裝病的最棘手難題。</p>
+      <div class="card-footer">
+        <span class="tag">成人ADHD</span><span class="tag">診斷評估</span><span class="tag">系統性回顧</span>
+        <a href="https://pubmed.ncbi.nlm.nih.gov/42297153/" target="_blank" rel="noopener">閱讀原文 →</a>
+      </div>
+    </div>
+    <div class="news-card featured">
+      <div class="card-header">
+        <span class="rank-badge">#3</span>
+        <span class="emoji-icon">📊</span>
+        <span class="utility-high">高實用性</span>
+      </div>
+      <h3>美國成人醫療用刺激素的使用趨勢與模式</h3>
+      <p class="journal-source">Molecular psychiatry &middot; Trends and patterns of medical stimulant use by US adults.</p>
+      <p>2018 至 2023 年間美國成人刺激素使用率微升至 2.2%，但 ADHD 就診者中實際接受刺激素治療的比例反而下降，且約一半患者透過遠距醫療取得處方。</p>
+      
+      <div class="pico-grid">
+        <div class="pico-item"><span class="pico-label">P</span><span class="pico-text">2018-2023 年美國醫療支出問卷調查的成人（n=119,138）</span></div>
+        <div class="pico-item"><span class="pico-label">I</span><span class="pico-text">接受刺激素處方治療（分為純遠距、純實體、混合醫療模式）</span></div>
+        <div class="pico-item"><span class="pico-label">C</span><span class="pico-text">未接受刺激素治療的成人；不同就醫模式間的比較</span></div>
+        <div class="pico-item"><span class="pico-label">O</span><span class="pico-text">成人刺激素使用率從 1.8% 升至 2.2%；ADHD 就診者中處方率從 81.6% 降至 74.6%；遠距與實體就醫者在刺激素或管制藥品處方量上無顯著差異</span></div>
+      </div>
+      <p class="utility-reason">💡 透過大型全國數據揭示後疫情時代遠距醫療對刺激素處方的影響，對醫療政策制定與臨床處方習慣有重大參考價值。</p>
+      <div class="card-footer">
+        <span class="tag">成人ADHD</span><span class="tag">藥物治療</span><span class="tag">刺激素類藥物</span><span class="tag">流行病學</span><span class="tag">公共衛生</span>
+        <a href="https://pubmed.ncbi.nlm.nih.gov/41731001/" target="_blank" rel="noopener">閱讀原文 →</a>
+      </div>
+    </div>
+    <div class="news-card featured">
+      <div class="card-header">
+        <span class="rank-badge">#4</span>
+        <span class="emoji-icon">🧬</span>
+        <span class="utility-mid">中實用性</span>
+      </div>
+      <h3>ADHD 遺傳學更新：實務工作者視角</h3>
+      <p class="journal-source">Canadian journal of psychiatry. Revue canadienne de psychiatrie &middot; Update on ADHD genetics: A practitioner's perspective: Mise à jour sur la génétique du TDAH : le point de vue d'un praticien.</p>
+      <p>ADHD 遺傳率高達 70% 但目前無診斷性基因檢測，臨床僅建議針對原非他命進行 CYP2D6 基因分型以調整劑量，不建議常規基因檢測來選擇刺激素。</p>
+      
+      <div class="pico-grid">
+        <div class="pico-item"><span class="pico-label">P</span><span class="pico-text">各年齡層 ADHD 個案與其家族</span></div>
+        <div class="pico-item"><span class="pico-label">I</span><span class="pico-text">基因檢測技術（包含 GWAS, CNV, 多基因風險評分, 藥物基因學如 CYP2D6）</span></div>
+        <div class="pico-item"><span class="pico-label">C</span><span class="pico-text">標準臨床評估（不使用基因檢測）</span></div>
+        <div class="pico-item"><span class="pico-label">O</span><span class="pico-text">無法作為診斷工具；CYP2D6 基因分型對原非他命劑量調整有實證支持，但對刺激素選擇無常規檢測指徵</span></div>
+      </div>
+      <p class="utility-reason">💡 釐清基因檢測在 ADHD 的邊界，提供明確的藥物基因學建議，有助於醫師回應患者對基因檢測的期待。</p>
+      <div class="card-footer">
+        <span class="tag">成人ADHD</span><span class="tag">藥物治療</span><span class="tag">非刺激素藥物</span><span class="tag">神經科學</span>
+        <a href="https://pubmed.ncbi.nlm.nih.gov/42299664/" target="_blank" rel="noopener">閱讀原文 →</a>
+      </div>
+    </div>
+    <div class="news-card featured">
+      <div class="card-header">
+        <span class="rank-badge">#5</span>
+        <span class="emoji-icon">📱</span>
+        <span class="utility-mid">中實用性</span>
+      </div>
+      <h3>ADHD、強迫症與問題性社群媒體使用的關聯</h3>
+      <p class="journal-source">Acta psychologica &middot; The relationship between ADHD, OCD, and problematic social media use.</p>
+      <p>注意力不集中症狀是導致問題性社群媒體使用的最強預測因子，並且部分中介了強迫症症狀與社群媒體成癮之間的關聯。</p>
+      
+      <div class="pico-grid">
+        <div class="pico-item"><span class="pico-label">P</span><span class="pico-text">403 名黎巴嫩大學生</span></div>
+        <div class="pico-item"><span class="pico-label">I</span><span class="pico-text">測量注意力不集中症狀、強迫症症狀與問題性社群媒體使用（PSMU）的關聯與中介模型</span></div>
+        <div class="pico-item"><span class="pico-label">C</span><span class="pico-text">無直接對照組（橫斷面相關與中介分析）</span></div>
+        <div class="pico-item"><span class="pico-label">O</span><span class="pico-text">注意力不集中與 PSMU 關聯最強，解釋了 35.98% 的變異量；注意力不集中部分中介了 OCD 與 PSMU 的關聯</span></div>
+      </div>
+      <p class="utility-reason">💡 點出注意力失調是導致數位成癮的關鍵路徑，為臨床師在評估成人 ADHD 共病時提供新的衛教與介入視角。</p>
+      <div class="card-footer">
+        <span class="tag">成人ADHD</span><span class="tag">共病症</span><span class="tag">成癮與衝動</span>
+        <a href="https://pubmed.ncbi.nlm.nih.gov/42184802/" target="_blank" rel="noopener">閱讀原文 →</a>
+      </div>
+    </div>
+    <div class="news-card featured">
+      <div class="card-header">
+        <span class="rank-badge">#6</span>
+        <span class="emoji-icon">❤️</span>
+        <span class="utility-low">低實用性</span>
+      </div>
+      <h3>探索界線：患有慢性疾病的年輕成人中的選擇性揭露、親密感與歸屬感</h3>
+      <p class="journal-source">Chronic illness &middot; Exploring the boundaries: Selective disclosure, intimacy and belongingness among young adults with chronic conditions.</p>
+      <p>患有 ADHD 等慢性病的年輕成人，在親密關係中的疾病揭露意願受自我接納度與過去汙名經驗影響，開放的伴侶關係有助於鼓勵揭露。</p>
+      
+      <div class="pico-grid">
+        <div class="pico-item"><span class="pico-label">P</span><span class="pico-text">44 名患有慢性疾病（包含高比例 ADHD 與 LGBTQ+ 個案）的青少年與年輕成人</span></div>
+        <div class="pico-item"><span class="pico-label">I</span><span class="pico-text">結合青年參與式行動研究（YPAR）的 35 題開放式縱貫性質性調查</span></div>
+        <div class="pico-item"><span class="pico-label">C</span><span class="pico-text">無對照組（質性研究）</span></div>
+        <div class="pico-item"><span class="pico-label">O</span><span class="pico-text">自我接納、賦權感塑造揭露意願；汙名化、拒絕恐懼與擔心被標籤化是主要阻礙</span></div>
+      </div>
+      <p class="utility-reason">💡 雖然對理解年輕 ADHD 患者在親密關係中的心理困境有幫助，但屬於質性探索，非急迫的臨床處置指引。</p>
+      <div class="card-footer">
+        <span class="tag">成人ADHD</span><span class="tag">社會功能</span><span class="tag">生活品質</span>
+        <a href="https://pubmed.ncbi.nlm.nih.gov/42300689/" target="_blank" rel="noopener">閱讀原文 →</a>
+      </div>
+    </div></div>
+
+  <div class="section"><div class="section-title"><span class="section-icon">📚</span>其他值得關注的文獻</div>
+    <div class="news-card">
+      <div class="card-header-row">
+        <span class="emoji-sm">🎭</span>
+        <span class="utility-low utility-sm">低</span>
+      </div>
+      <h3>神經與神經發展疾病中的複雜情緒辨識</h3>
+      <p class="journal-source">Acta psychologica</p>
+      <p>ADHD 成人在複雜情緒辨識測驗（COSIMO）上表現顯著低於健康對照組，顯示出社會認知缺陷普遍存在於神經發展條件中。</p>
+      <div class="card-footer">
+        <span class="tag">成人ADHD</span><span class="tag">社會功能</span><span class="tag">神經科學</span>
+        <a href="https://pubmed.ncbi.nlm.nih.gov/42176442/" target="_blank" rel="noopener">PubMed →</a>
+      </div>
+    </div>
+    <div class="news-card">
+      <div class="card-header-row">
+        <span class="emoji-sm">🧠</span>
+        <span class="utility-low utility-sm">低</span>
+      </div>
+      <h3>不同大腦，共同掙扎：神經多樣性條件下的人格與自我信念</h3>
+      <p class="journal-source">Acta psychologica</p>
+      <p>包含 ADHD 在內的多種神經多樣性條件，共享一種社會認知脆弱性模式，表現為負面自我信念升高與正面自我信念降低。</p>
+      <div class="card-footer">
+        <span class="tag">成人ADHD</span><span class="tag">心理治療</span><span class="tag">社會功能</span>
+        <a href="https://pubmed.ncbi.nlm.nih.gov/42161138/" target="_blank" rel="noopener">PubMed →</a>
+      </div>
+    </div>
+    <div class="news-card">
+      <div class="card-header-row">
+        <span class="emoji-sm">👁️</span>
+        <span class="utility-low utility-sm">低</span>
+      </div>
+      <h3>優越的知覺容量是自閉症認知特有的特徵</h3>
+      <p class="journal-source">Acta psychologica</p>
+      <p>研究確認較高的知覺容量是自閉症認知獨有的特徵，ADHD 或 AuDHD 個案並未表現出此特徵，有助於釐清不同神經發展條件的認知基礎差異。</p>
+      <div class="card-footer">
+        <span class="tag">自閉症共病</span><span class="tag">神經科學</span>
+        <a href="https://pubmed.ncbi.nlm.nih.gov/42155188/" target="_blank" rel="noopener">PubMed →</a>
+      </div>
+    </div>
+    <div class="news-card">
+      <div class="card-header-row">
+        <span class="emoji-sm">🌍</span>
+        <span class="utility-low utility-sm">低</span>
+      </div>
+      <h3>青少年與年輕成人精神與物質使用障礙的全球負擔</h3>
+      <p class="journal-source">Molecular psychiatry</p>
+      <p>2021 年全球年輕成人精神障礙盛行率達 16.1%，其中男性 ADHD 盛行率顯著高於女性，且在疫情期間整體精神疾病負擔大幅攀升。</p>
+      <div class="card-footer">
+        <span class="tag">流行病學</span><span class="tag">公共衛生</span><span class="tag">成人ADHD</span>
+        <a href="https://pubmed.ncbi.nlm.nih.gov/41764339/" target="_blank" rel="noopener">PubMed →</a>
+      </div>
+    </div></div>
+
+  <div class="topic-section section"><div class="section-title"><span class="section-icon">📊</span>主題分佈</div>
+      <div class="topic-row">
+        <span class="topic-name">成人ADHD</span>
+        <div class="topic-bar-bg"><div class="topic-bar" style="width:100%"></div></div>
+        <span class="topic-count">6</span>
+      </div>
+      <div class="topic-row">
+        <span class="topic-name">診斷評估</span>
+        <div class="topic-bar-bg"><div class="topic-bar" style="width:33%"></div></div>
+        <span class="topic-count">2</span>
+      </div>
+      <div class="topic-row">
+        <span class="topic-name">藥物治療</span>
+        <div class="topic-bar-bg"><div class="topic-bar" style="width:33%"></div></div>
+        <span class="topic-count">2</span>
+      </div>
+      <div class="topic-row">
+        <span class="topic-name">共病症</span>
+        <div class="topic-bar-bg"><div class="topic-bar" style="width:33%"></div></div>
+        <span class="topic-count">2</span>
+      </div>
+      <div class="topic-row">
+        <span class="topic-name">社會功能</span>
+        <div class="topic-bar-bg"><div class="topic-bar" style="width:50%"></div></div>
+        <span class="topic-count">3</span>
+      </div>
+      <div class="topic-row">
+        <span class="topic-name">流行病學</span>
+        <div class="topic-bar-bg"><div class="topic-bar" style="width:33%"></div></div>
+        <span class="topic-count">2</span>
+      </div>
+      <div class="topic-row">
+        <span class="topic-name">公共衛生</span>
+        <div class="topic-bar-bg"><div class="topic-bar" style="width:33%"></div></div>
+        <span class="topic-count">2</span>
+      </div>
+      <div class="topic-row">
+        <span class="topic-name">神經科學</span>
+        <div class="topic-bar-bg"><div class="topic-bar" style="width:50%"></div></div>
+        <span class="topic-count">3</span>
+      </div></div>
+
+  <div class="keywords-section section"><div class="section-title"><span class="section-icon">🏷️</span>關鍵字</div><div class="keywords"><span class="keyword">女性ADHD</span><span class="keyword">裝病鑑別</span><span class="keyword">刺激素處方趨勢</span><span class="keyword">基因檢測實務</span><span class="keyword">數位成癮</span></div></div>
+
+  <div class="links-section">
+    <a href="https://www.leepsyclinic.com/" class="link-card" target="_blank" rel="noopener">
+      <span class="link-icon">🏥</span>
+      <div><span class="link-name">李政洋身心診所</span><span class="link-desc">專業身心科診所，提供成人 ADHD 評估與治療</span></div>
+      <span class="link-arrow">→</span>
+    </a>
+    <a href="https://blog.leepsyclinic.com/" class="link-card" target="_blank" rel="noopener">
+      <span class="link-icon">📬</span>
+      <div><span class="link-name">訂閱電子報</span><span class="link-desc">定期收到最新身心健康資訊與研究整理</span></div>
+      <span class="link-arrow">→</span>
+    </a>
+    <a href="https://buymeacoffee.com/CYlee" class="link-card" target="_blank" rel="noopener">
+      <span class="link-icon">☕</span>
+      <div><span class="link-name">Buy Me a Coffee</span><span class="link-desc">支持本研究日報持續運作</span></div>
+      <span class="link-arrow">→</span>
+    </a>
+  </div>
+
+  <footer>
+    <span>資料來源：PubMed &middot; 分析模型：glm-5-turbo</span>
+    <span><a href="https://github.com/u8901006/Adult-ADHD">GitHub</a></span>
+  </footer>
+</div>
+</body>
+</html>
