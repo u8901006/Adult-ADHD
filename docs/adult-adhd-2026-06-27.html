@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Adult ADHD Daily &middot; 成人 ADHD 文獻日報 &middot; 2026年6月27日</title>
+<meta name="description" content="2026年6月27日 成人注意力不足過動症文獻日報，由 AI 自動彙整 PubMed 最新論文"/>
+<style>
+:root{--bg:#f6f1e8;--surface:#fffaf2;--line:#d8c5ab;--text:#2b2118;--muted:#766453;--accent:#8c4f2b;--accent-soft:#ead2bf;--card-bg:color-mix(in srgb,var(--surface) 92%,white)}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+body{background:radial-gradient(circle at top,#fff6ea 0,var(--bg) 55%,#ead8c6 100%);color:var(--text);font-family:"Noto Sans TC","PingFang TC","Helvetica Neue",Arial,sans-serif;min-height:100vh;overflow-x:hidden}
+.container{position:relative;z-index:1;max-width:880px;margin:0 auto;padding:60px 32px 80px}
+header{display:flex;align-items:center;gap:16px;margin-bottom:52px;animation:fadeDown .6s ease both}
+.logo{width:48px;height:48px;border-radius:14px;background:var(--accent);display:flex;align-items:center;justify-content:center;font-size:22px;flex-shrink:0;box-shadow:0 4px 20px rgba(140,79,43,.25)}
+.header-text h1{font-size:22px;font-weight:700;color:var(--text);letter-spacing:-.3px}
+.header-meta{display:flex;gap:8px;margin-top:6px;flex-wrap:wrap;align-items:center}
+.badge{display:inline-block;padding:3px 10px;border-radius:20px;font-size:11px;letter-spacing:.3px}
+.badge-date{background:var(--accent-soft);border:1px solid var(--line);color:var(--accent)}
+.badge-count{background:rgba(140,79,43,.06);border:1px solid var(--line);color:var(--muted)}
+.badge-source{background:transparent;color:var(--muted);font-size:11px;padding:0 4px}
+.summary-card{background:var(--card-bg);border:1px solid var(--line);border-radius:24px;padding:28px 32px;margin-bottom:32px;box-shadow:0 20px 60px rgba(61,36,15,.06);animation:fadeUp .5s ease .1s both}
+.summary-card h2{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:1.6px;color:var(--accent);margin-bottom:16px}
+.summary-text{font-size:15px;line-height:1.8;color:var(--text)}
+.section{margin-bottom:36px;animation:fadeUp .5s ease both}
+.section-title{display:flex;align-items:center;gap:10px;font-size:17px;font-weight:700;color:var(--text);margin-bottom:16px;padding-bottom:12px;border-bottom:1px solid var(--line)}
+.section-icon{width:28px;height:28px;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:14px;flex-shrink:0;background:var(--accent-soft)}
+.news-card{background:var(--card-bg);border:1px solid var(--line);border-radius:24px;padding:22px 26px;margin-bottom:12px;box-shadow:0 8px 30px rgba(61,36,15,.04);transition:background .2s,border-color .2s,transform .2s}
+.news-card:hover{transform:translateY(-2px);box-shadow:0 12px 40px rgba(61,36,15,.08)}
+.news-card.featured{border-left:3px solid var(--accent)}
+.news-card.featured:hover{border-color:var(--accent)}
+.card-header{display:flex;align-items:center;gap:8px;margin-bottom:10px}
+.rank-badge{background:var(--accent);color:#fff7f0;font-weight:700;font-size:12px;padding:2px 8px;border-radius:6px}
+.emoji-icon{font-size:18px}
+.card-header-row{display:flex;align-items:center;gap:8px;margin-bottom:8px}
+.emoji-sm{font-size:14px}
+.news-card h3{font-size:15px;font-weight:600;color:var(--text);margin-bottom:8px;line-height:1.5}
+.journal-source{font-size:12px;color:var(--accent);margin-bottom:8px;opacity:.8}
+.news-card p{font-size:13.5px;line-height:1.75;color:var(--muted)}
+.utility-reason{font-size:12px!important;color:var(--accent)!important;opacity:.85;margin-top:4px}
+.card-footer{margin-top:12px;display:flex;flex-wrap:wrap;gap:6px;align-items:center}
+.tag{padding:2px 9px;background:var(--accent-soft);border-radius:999px;font-size:11px;color:var(--accent)}
+.news-card a{font-size:12px;color:var(--accent);text-decoration:none;opacity:.7;margin-left:auto}
+.news-card a:hover{opacity:1}
+.utility-high{color:#5a7a3a;font-size:11px;font-weight:600;padding:2px 8px;background:rgba(90,122,58,.1);border-radius:4px}
+.utility-mid{color:#9f7a2e;font-size:11px;font-weight:600;padding:2px 8px;background:rgba(159,122,46,.1);border-radius:4px}
+.utility-low{color:var(--muted);font-size:11px;font-weight:600;padding:2px 8px;background:rgba(118,100,83,.08);border-radius:4px}
+.utility-sm{font-size:10px}
+.pico-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:12px;padding:12px;background:rgba(255,253,249,.8);border-radius:14px;border:1px solid var(--line)}
+.pico-item{display:flex;gap:8px;align-items:baseline}
+.pico-label{font-size:10px;font-weight:700;color:#fff7f0;background:var(--accent);padding:2px 6px;border-radius:4px;flex-shrink:0}
+.pico-text{font-size:12px;color:var(--muted);line-height:1.4}
+.keywords-section{margin-bottom:36px}
+.keywords{display:flex;flex-wrap:wrap;gap:8px;margin-top:8px}
+.keyword{padding:5px 14px;background:var(--accent-soft);border:1px solid var(--line);border-radius:20px;font-size:12px;color:var(--accent);cursor:default;transition:background .2s}
+.keyword:hover{background:rgba(140,79,43,.18)}
+.topic-section{margin-bottom:36px}
+.topic-row{display:flex;align-items:center;gap:10px;margin-bottom:8px}
+.topic-name{font-size:13px;color:var(--muted);width:120px;flex-shrink:0;text-align:right}
+.topic-bar-bg{flex:1;height:8px;background:var(--line);border-radius:4px;overflow:hidden}
+.topic-bar{height:100%;background:linear-gradient(90deg,var(--accent),#c47a4a);border-radius:4px;transition:width .6s ease}
+.topic-count{font-size:12px;color:var(--accent);width:24px}
+.links-section{margin-top:48px;display:flex;flex-direction:column;gap:12px;animation:fadeUp .5s ease .4s both}
+.link-card{display:flex;align-items:center;gap:14px;padding:18px 24px;background:var(--card-bg);border:1px solid var(--line);border-radius:24px;text-decoration:none;color:var(--text);transition:all .2s;box-shadow:0 8px 30px rgba(61,36,15,.04)}
+.link-card:hover{border-color:var(--accent);transform:translateY(-2px);box-shadow:0 12px 40px rgba(61,36,15,.08)}
+.link-icon{font-size:28px;flex-shrink:0}
+.link-name{font-size:15px;font-weight:700;color:var(--text);flex:1}
+.link-desc{font-size:12px;color:var(--muted);margin-top:2px}
+.link-arrow{font-size:18px;color:var(--accent);font-weight:700}
+footer{margin-top:32px;padding-top:22px;border-top:1px solid var(--line);font-size:11.5px;color:var(--muted);display:flex;justify-content:space-between;animation:fadeUp .5s ease .5s both}
+footer a{color:var(--muted);text-decoration:none}
+footer a:hover{color:var(--accent)}
+@keyframes fadeDown{from{opacity:0;transform:translateY(-16px)}to{opacity:1;transform:translateY(0)}}
+@keyframes fadeUp{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}
+@media(max-width:600px){.container{padding:36px 18px 60px}.summary-card,.news-card{padding:20px 18px}.pico-grid{grid-template-columns:1fr}footer{flex-direction:column;gap:6px;text-align:center}.topic-name{width:80px;font-size:11px}.links-section{gap:10px}.link-card{padding:14px 18px}}
+</style>
+</head>
+<body>
+<div class="container">
+  <header>
+    <div class="logo">🧠</div>
+    <div class="header-text">
+      <h1>Adult ADHD Daily &middot; 成人 ADHD 文獻日報</h1>
+      <div class="header-meta">
+        <span class="badge badge-date">📅 2026年6月27日（週六）</span>
+        <span class="badge badge-count">📊 19 篇文獻</span>
+        <span class="badge badge-source">Powered by PubMed + Zhipu AI</span>
+      </div>
+    </div>
+  </header>
+
+  <div class="summary-card">
+    <h2>📋 今日文獻趨勢</h2>
+    <p class="summary-text">今日文獻亮點多聚焦於成人ADHD的臨床評估、真實世界藥物治療效果及非藥物介入。特別是在女性與孕產期用藥安全，以及情緒與睡眠共病症方面有重大突破，為臨床決策提供了更全面的視角。</p>
+  </div>
+
+  <div class="section"><div class="section-title"><span class="section-icon">⭐</span>今日精選 TOP Picks</div>
+    <div class="news-card featured">
+      <div class="card-header">
+        <span class="rank-badge">#1</span>
+        <span class="emoji-icon">📊</span>
+        <span class="utility-high">高實用性</span>
+      </div>
+      <h3>CAARS 2 評估量表顯示成人 ADHD 的症狀結構在成年期保持穩定</h3>
+      <p class="journal-source">Psychiatry research &middot; Is the Structure of ADHD stable across adulthood? Insights from the CAARS 2.</p>
+      <p>研究證實成人 ADHD 的五因素潛在結構（注意力不足/執行功能障礙、過動、衝動、情緒失調、負面自我概念）在新興成年期至中年期皆保持穩定，支持以五因素模型取代傳統 DSM 的兩因素診斷框架。</p>
+      
+      <div class="pico-grid">
+        <div class="pico-item"><span class="pico-label">P</span><span class="pico-text">新興成年期（18-24歲）、早期成年期（25-39歲）與中年期（40-64歲）的一般民眾與 ADHD 患者</span></div>
+        <div class="pico-item"><span class="pico-label">I</span><span class="pico-text">使用 Conners 成人 ADHD 評估量表第二版（CAARS 2）進行自評與他評</span></div>
+        <div class="pico-item"><span class="pico-label">C</span><span class="pico-text">不同成年年齡階段組別之間的比較</span></div>
+        <div class="pico-item"><span class="pico-label">O</span><span class="pico-text">量表五因素結構的測量恆等性與潛在結構穩定性</span></div>
+      </div>
+      <p class="utility-reason">💡 提供臨床人員更具信效度的評估框架，將情緒失調與負面自我概念纳入成人ADHD的常規評估中。</p>
+      <div class="card-footer">
+        <span class="tag">成人ADHD</span><span class="tag">診斷評估</span><span class="tag">CAARS</span>
+        <a href="https://pubmed.ncbi.nlm.nih.gov/42070363/" target="_blank" rel="noopener">閱讀原文 →</a>
+      </div>
+    </div>
+    <div class="news-card featured">
+      <div class="card-header">
+        <span class="rank-badge">#2</span>
+        <span class="emoji-icon">😴</span>
+        <span class="utility-high">高實用性</span>
+      </div>
+      <h3>成人 ADHD 患者的情緒調節困難與失眠症狀密切相關</h3>
+      <p class="journal-source">Journal of affective disorders &middot; Emotion regulation difficulties in adults with ADHD and associations with insomnia symptoms.</p>
+      <p>針對超過 1400 名成人 ADHD 患者的大型研究發現，情緒調節困難（尤其是缺乏有效的調節策略）與失眠症狀有顯著關聯，且在 30 歲以下的年輕成人中關聯性更強。</p>
+      
+      <div class="pico-grid">
+        <div class="pico-item"><span class="pico-label">P</span><span class="pico-text">1414 名確診為成人 ADHD 的患者（年齡 16-74 歲）</span></div>
+        <div class="pico-item"><span class="pico-label">I</span><span class="pico-text">無（觀察性研究）</span></div>
+        <div class="pico-item"><span class="pico-label">C</span><span class="pico-text">不同情緒調節能力與失眠程度之間的關聯</span></div>
+        <div class="pico-item"><span class="pico-label">O</span><span class="pico-text">情緒調節困難對失眠症狀的預測力</span></div>
+      </div>
+      <p class="utility-reason">💡 強調了在治療成人 ADHD 患者的睡眠問題時，必須同時評估並介入情緒調節困難。</p>
+      <div class="card-footer">
+        <span class="tag">成人ADHD</span><span class="tag">情緒調節</span><span class="tag">睡眠障礙</span>
+        <a href="https://pubmed.ncbi.nlm.nih.gov/42173367/" target="_blank" rel="noopener">閱讀原文 →</a>
+      </div>
+    </div>
+    <div class="news-card featured">
+      <div class="card-header">
+        <span class="rank-badge">#3</span>
+        <span class="emoji-icon">💊</span>
+        <span class="utility-mid">中實用性</span>
+      </div>
+      <h3>中樞神經刺激劑對成人 ADHD 社會、行為與就業結果的真實世界影響</h3>
+      <p class="journal-source">Journal of attention disorders &middot; Impact of Medication Therapy on Social, Behavioral, and Employment Outcomes in Adults With ADHD.</p>
+      <p>回顧性研究指出，雖然接受刺激素治療與未接受治療者在就業率上無顯著差異，但服藥順從性高的患者有更高的自僱率；然而，用藥組也反映出較多的社會限制與較少的身體活動。</p>
+      
+      <div class="pico-grid">
+        <div class="pico-item"><span class="pico-label">P</span><span class="pico-text">美國 2013-2019 年醫療支出小組調查（MEPS）中確診為成人 ADHD 的患者</span></div>
+        <div class="pico-item"><span class="pico-label">I</span><span class="pico-text">接受中樞神經刺激劑藥物治療</span></div>
+        <div class="pico-item"><span class="pico-label">C</span><span class="pico-text">未接受刺激劑治療的成人 ADHD 患者</span></div>
+        <div class="pico-item"><span class="pico-label">O</span><span class="pico-text">社會功能限制、身體活動量與就業狀態（包含自僱比例）</span></div>
+      </div>
+      <p class="utility-reason">💡 提醒臨床醫師在開立藥物時，需關注藥物對患者真實世界社交與職業功能的廣泛影響。</p>
+      <div class="card-footer">
+        <span class="tag">成人ADHD</span><span class="tag">藥物治療</span><span class="tag">刺激素類藥物</span><span class="tag">職場功能</span><span class="tag">社會功能</span>
+        <a href="https://pubmed.ncbi.nlm.nih.gov/41914673/" target="_blank" rel="noopener">閱讀原文 →</a>
+      </div>
+    </div>
+    <div class="news-card featured">
+      <div class="card-header">
+        <span class="rank-badge">#4</span>
+        <span class="emoji-icon">📱</span>
+        <span class="utility-mid">中實用性</span>
+      </div>
+      <h3>個人化數位認知訓練可改善成人 ADHD 的主觀認知與生活品質</h3>
+      <p class="journal-source">Journal of psychiatric research &middot; Effects of a novel individualized digital cognitive training on ADHD characteristics, quality of life, and cognitive functioning in adults with ADHD: A randomized controlled trial.</p>
+      <p>隨機對照試驗顯示，為期 12 週的個人化數位認知訓練 APP 雖未能顯著提升客觀神經心理測試成績，但能改善成人 ADHD 患者的主觀認知感受與心理生活品質。</p>
+      
+      <div class="pico-grid">
+        <div class="pico-item"><span class="pico-label">P</span><span class="pico-text">77 名確診為成人 ADHD 的患者</span></div>
+        <div class="pico-item"><span class="pico-label">I</span><span class="pico-text">使用 NeuroNation MED 應用程式進行為期 12 週的數位認知訓練</span></div>
+        <div class="pico-item"><span class="pico-label">C</span><span class="pico-text">常規治療（TAU）等待名單對照組</span></div>
+        <div class="pico-item"><span class="pico-label">O</span><span class="pico-text">執行功能、ADHD 特徵、主觀認知感受與心理生活品質</span></div>
+      </div>
+      <p class="utility-reason">💡 支持數位認知訓練作為成人 ADHD 的輔助療法，特別是在提升患者自信心與日常功能感受方面。</p>
+      <div class="card-footer">
+        <span class="tag">成人ADHD</span><span class="tag">數位健康</span><span class="tag">APP介入</span><span class="tag">執行功能</span><span class="tag">生活品質</span><span class="tag">隨機對照試驗</span>
+        <a href="https://pubmed.ncbi.nlm.nih.gov/42142506/" target="_blank" rel="noopener">閱讀原文 →</a>
+      </div>
+    </div>
+    <div class="news-card featured">
+      <div class="card-header">
+        <span class="rank-badge">#5</span>
+        <span class="emoji-icon">🤱</span>
+        <span class="utility-high">高實用性</span>
+      </div>
+      <h3>開發超靈敏檢測法：非刺激素類 ADHD 藥物在母乳中的濃度極低</h3>
+      <p class="journal-source">Journal of pharmaceutical and biomedical analysis &middot; UPLC-MS/MS method for quantifying non-stimulant ADHD medications in human breast milk and plasma: Application in a lactating patient receiving atomoxetine.</p>
+      <p>成功開發並驗證一套可同時檢測母乳與血漿中阿托莫西汀與胍法辛等非刺激素藥物的方法，初步個案顯示阿托莫西汀的相對嬰兒劑量極低，為哺乳期婦女用藥提供初步安全數據。</p>
+      
+      <div class="pico-grid">
+        <div class="pico-item"><span class="pico-label">P</span><span class="pico-text">哺乳期接受阿托莫西汀 治療的 ADHD 產婦</span></div>
+        <div class="pico-item"><span class="pico-label">I</span><span class="pico-text">阿托莫西汀藥物治療</span></div>
+        <div class="pico-item"><span class="pico-label">C</span><span class="pico-text">母乳與母體血漿中的藥物濃度比值</span></div>
+        <div class="pico-item"><span class="pico-label">O</span><span class="pico-text">母乳與血漿藥物濃度比值 (M/P) 與相對嬰兒劑量 (RID)</span></div>
+      </div>
+      <p class="utility-reason">💡 為臨床醫師與哺乳期 ADHD 女性提供阿托莫西汀安全性評估的重要實證依據，緩解用藥焦慮。</p>
+      <div class="card-footer">
+        <span class="tag">成人ADHD</span><span class="tag">非刺激素藥物</span><span class="tag">女性ADHD</span><span class="tag">孕期用藥</span><span class="tag">藥物安全</span>
+        <a href="https://pubmed.ncbi.nlm.nih.gov/42202754/" target="_blank" rel="noopener">閱讀原文 →</a>
+      </div>
+    </div>
+    <div class="news-card featured">
+      <div class="card-header">
+        <span class="rank-badge">#6</span>
+        <span class="emoji-icon">🧪</span>
+        <span class="utility-mid">中實用性</span>
+      </div>
+      <h3>體外研究示警：阿托莫西汀可能透過破壞鈣離子平衡損害人類精子功能</h3>
+      <p class="journal-source">Reproductive toxicology (Elmsford, N.Y.) &middot; Atomoxetine hydrochloride impairs human sperm quality and function via disruption of calcium homeostasis and PKC signaling: A combined network pharmacology and in vitro study.</p>
+      <p>體外實驗發現，常用藥物阿托莫西汀在特定濃度下會破壞精子的鈣離子平衡與 PKC 訊號傳導，從而顯著降低精子活動力，對男性成人 ADHD 患者的生殖健康潛藏風險。</p>
+      
+      <div class="pico-grid">
+        <div class="pico-item"><span class="pico-label">P</span><span class="pico-text">人類精子檢體（體外實驗）</span></div>
+        <div class="pico-item"><span class="pico-label">I</span><span class="pico-text">暴露於不同濃度的阿托莫西汀 (1-500 µM)</span></div>
+        <div class="pico-item"><span class="pico-label">C</span><span class="pico-text">未暴露於藥物的控制組精子</span></div>
+        <div class="pico-item"><span class="pico-label">O</span><span class="pico-text">精子活動力、細胞存活率、鈣離子平衡與獲能反應</span></div>
+      </div>
+      <p class="utility-reason">💡 提醒醫師在處方阿托莫西汀給有生育需求的男性患者時，應將潛在的生殖風險納入衛教與考量。</p>
+      <div class="card-footer">
+        <span class="tag">成人ADHD</span><span class="tag">非刺激素藥物</span><span class="tag">藥物安全</span>
+        <a href="https://pubmed.ncbi.nlm.nih.gov/42140398/" target="_blank" rel="noopener">閱讀原文 →</a>
+      </div>
+    </div>
+    <div class="news-card featured">
+      <div class="card-header">
+        <span class="rank-badge">#7</span>
+        <span class="emoji-icon">🚺</span>
+        <span class="utility-high">高實用性</span>
+      </div>
+      <h3>女性憂鬱與焦慮門診患者中，近兩成患有 ADHD 但常被漏診</h3>
+      <p class="journal-source">International journal of psychiatry in medicine &middot; ADHD Comorbidity in Women with Depression and Anxiety: Prevalence, Clinical Features and Hyperfocus Dynamics.</p>
+      <p>研究指出，在女性憂鬱與焦慮門診中，高達 19.6% 的患者同時符合 ADHD 診斷，其中近半數過去未被診斷出來。過度專注 是常見特徵，但僅凭此症狀不足以確診。</p>
+      
+      <div class="pico-grid">
+        <div class="pico-item"><span class="pico-label">P</span><span class="pico-text">170 名因憂鬱或焦慮就診於精神科門診的女性患者</span></div>
+        <div class="pico-item"><span class="pico-label">I</span><span class="pico-text">無（觀察性篩檢）</span></div>
+        <div class="pico-item"><span class="pico-label">C</span><span class="pico-text">符合 ADHD 診斷與未符合診斷的患者群體</span></div>
+        <div class="pico-item"><span class="pico-label">O</span><span class="pico-text">ADHD 盛行率、過去漏診率及過度專注特徵的相關性</span></div>
+      </div>
+      <p class="utility-reason">💡 強烈建議精神科醫師在面對女性憂鬱與焦慮患者時，應常規進行 ADHD 篩檢，以避免錯失治療良機。</p>
+      <div class="card-footer">
+        <span class="tag">成人ADHD</span><span class="tag">女性ADHD</span><span class="tag">共病症</span><span class="tag">憂鬱症</span><span class="tag">焦慮症</span><span class="tag">診斷評估</span><span class="tag">篩檢工具</span>
+        <a href="https://pubmed.ncbi.nlm.nih.gov/40934870/" target="_blank" rel="noopener">閱讀原文 →</a>
+      </div>
+    </div></div>
+
+  <div class="section"><div class="section-title"><span class="section-icon">📚</span>其他值得關注的文獻</div>
+    <div class="news-card">
+      <div class="card-header-row">
+        <span class="emoji-sm">🏳️‍🌈</span>
+        <span class="utility-low utility-sm">低</span>
+      </div>
+      <h3>非異性戀大學生報告顯示更高的 ADHD 症狀與人際關係挑戰</h3>
+      <p class="journal-source">Psychological reports</p>
+      <p>非異性戀大學生在注意力不足與過動衝動量表上的分數顯著高於異性戀學生，推測可能與少數群體壓力有關。</p>
+      <div class="card-footer">
+        <span class="tag">成人ADHD</span><span class="tag">社會功能</span>
+        <a href="https://pubmed.ncbi.nlm.nih.gov/42363636/" target="_blank" rel="noopener">PubMed →</a>
+      </div>
+    </div>
+    <div class="news-card">
+      <div class="card-header-row">
+        <span class="emoji-sm">☣️</span>
+        <span class="utility-low utility-sm">低</span>
+      </div>
+      <h3>永久化學品 PFAS 暴露對大腦發展與神經功能的毒性影響</h3>
+      <p class="journal-source">Behavioural brain research</p>
+      <p>文獻回顧指出，環境毒物 PFAS 不僅會增加兒童罹患 ADHD 的風險，還會在成人腦中累積，干擾神經傳導物質並引發神經發炎。</p>
+      <div class="card-footer">
+        <span class="tag">公共衛生</span><span class="tag">神經科學</span>
+        <a href="https://pubmed.ncbi.nlm.nih.gov/42361859/" target="_blank" rel="noopener">PubMed →</a>
+      </div>
+    </div>
+    <div class="news-card">
+      <div class="card-header-row">
+        <span class="emoji-sm">🥽</span>
+        <span class="utility-low utility-sm">低</span>
+      </div>
+      <h3>中國醫療環境中沉浸式延伸實境（XR）的國民接受度與決定因素</h3>
+      <p class="journal-source">Journal of medical Internet research</p>
+      <p>一項針對中國成年人的大規模調查顯示，沉浸式 XR 技術在醫療保健中的接受度中等，且與年輕、數位健康素養及社經地位呈正相關。</p>
+      <div class="card-footer">
+        <span class="tag">數位健康</span>
+        <a href="https://pubmed.ncbi.nlm.nih.gov/42361229/" target="_blank" rel="noopener">PubMed →</a>
+      </div>
+    </div>
+    <div class="news-card">
+      <div class="card-header-row">
+        <span class="emoji-sm">🐁</span>
+        <span class="utility-low utility-sm">低</span>
+      </div>
+      <h3>青春期暴露於甲基酚（MPH）對成年後持續注意力與神經元發育的長期影響</h3>
+      <p class="journal-source">Progress in neuro-psychopharmacology &amp; biological psychiatry</p>
+      <p>動物實驗顯示，在青春期晚期持續暴露於中樞神經刺激劑，會減少前額葉生長抑素神經元的成熟，並導致成年後持續注意力的長期缺損。</p>
+      <div class="card-footer">
+        <span class="tag">藥物治療</span><span class="tag">刺激素類藥物</span><span class="tag">神經科學</span>
+        <a href="https://pubmed.ncbi.nlm.nih.gov/42208789/" target="_blank" rel="noopener">PubMed →</a>
+      </div>
+    </div>
+    <div class="news-card">
+      <div class="card-header-row">
+        <span class="emoji-sm">⚡</span>
+        <span class="utility-mid utility-sm">中</span>
+      </div>
+      <h3>女性癲癇患者的高 ADHD 症狀與憂鬱、焦慮密切相關</h3>
+      <p class="journal-source">Epilepsy &amp; behavior : E&amp;B</p>
+      <p>針對女性癲癇患者的研究發現，43% 的人 ADHD 篩檢呈陽性，且這些症狀與憂鬱、焦慮情緒有高度重疊與關聯。</p>
+      <div class="card-footer">
+        <span class="tag">成人ADHD</span><span class="tag">女性ADHD</span><span class="tag">共病症</span><span class="tag">焦慮症</span><span class="tag">憂鬱症</span>
+        <a href="https://pubmed.ncbi.nlm.nih.gov/42202452/" target="_blank" rel="noopener">PubMed →</a>
+      </div>
+    </div>
+    <div class="news-card">
+      <div class="card-header-row">
+        <span class="emoji-sm">🧒</span>
+        <span class="utility-low utility-sm">低</span>
+      </div>
+      <h3>兒童青少年精神疾患的維度與範疇評估方法比較</h3>
+      <p class="journal-source">Journal of affective disorders</p>
+      <p>研究證實，在評估兒童青少年的情緒行為問題時，採用維度評估比傳統的範疇分類更能有效捕捉不同診斷間的差異。</p>
+      <div class="card-footer">
+        <span class="tag">注意力不足過動症</span><span class="tag">診斷評估</span>
+        <a href="https://pubmed.ncbi.nlm.nih.gov/42155858/" target="_blank" rel="noopener">PubMed →</a>
+      </div>
+    </div>
+    <div class="news-card">
+      <div class="card-header-row">
+        <span class="emoji-sm">🧲</span>
+        <span class="utility-low utility-sm">低</span>
+      </div>
+      <h3>經顱磁刺激（TMS）作為小兒神經精神疾病生物標記之系統性回顧</h3>
+      <p class="journal-source">Progress in neuro-psychopharmacology &amp; biological psychiatry</p>
+      <p>統合分析顯示，TMS 衍生的電生理指標可作為輔助工具，有效反映 ADHD 等神經發展疾病的皮質抑制與興奮性異常。</p>
+      <div class="card-footer">
+        <span class="tag">診斷評估</span><span class="tag">神經科學</span><span class="tag">系統性回顧</span>
+        <a href="https://pubmed.ncbi.nlm.nih.gov/42134566/" target="_blank" rel="noopener">PubMed →</a>
+      </div>
+    </div>
+    <div class="news-card">
+      <div class="card-header-row">
+        <span class="emoji-sm">🎰</span>
+        <span class="utility-mid utility-sm">中</span>
+      </div>
+      <h3>成人 ADHD 患者的壓力感知與多重成癮嚴重度之關聯分析</h3>
+      <p class="journal-source">Psychiatry research</p>
+      <p>在成人 ADHD 患者中，無論是何種類型的成癮，其嚴重度主要受「壓力感知」驅動，而非單純的 ADHD 核心症狀。</p>
+      <div class="card-footer">
+        <span class="tag">成人ADHD</span><span class="tag">成癮與衝動</span>
+        <a href="https://pubmed.ncbi.nlm.nih.gov/42066481/" target="_blank" rel="noopener">PubMed →</a>
+      </div>
+    </div>
+    <div class="news-card">
+      <div class="card-header-row">
+        <span class="emoji-sm">🧠</span>
+        <span class="utility-low utility-sm">低</span>
+      </div>
+      <h3>結合多模態 MRI 與機器學習預測 ADHD 患者的成年功能性預後</h3>
+      <p class="journal-source">Progress in neuro-psychopharmacology &amp; biological psychiatry</p>
+      <p>透過結合大腦結構與靜息態功能性 MRI 的機器學習模型，能以高達 0.816 的 AUC 準確預測兒童 ADHD 患者長大後的整體功能恢復狀況。</p>
+      <div class="card-footer">
+        <span class="tag">成人ADHD</span><span class="tag">神經影像學</span><span class="tag">縱貫性研究</span>
+        <a href="https://pubmed.ncbi.nlm.nih.gov/41985649/" target="_blank" rel="noopener">PubMed →</a>
+      </div>
+    </div>
+    <div class="news-card">
+      <div class="card-header-row">
+        <span class="emoji-sm">🕸️</span>
+        <span class="utility-low utility-sm">低</span>
+      </div>
+      <h3>以非線性功能連結揭示成人 ADHD 的大腦網絡異常</h3>
+      <p class="journal-source">Journal of affective disorders</p>
+      <p>提出一種新的非線性腦功能連結分析方法，能較傳統線性模型更靈敏地偵測出成人 ADHD 患者在枕葉與預設網絡的異常。</p>
+      <div class="card-footer">
+        <span class="tag">成人ADHD</span><span class="tag">神經影像學</span><span class="tag">神經科學</span>
+        <a href="https://pubmed.ncbi.nlm.nih.gov/41936984/" target="_blank" rel="noopener">PubMed →</a>
+      </div>
+    </div>
+    <div class="news-card">
+      <div class="card-header-row">
+        <span class="emoji-sm">🔍</span>
+        <span class="utility-low utility-sm">低</span>
+      </div>
+      <h3>成人 ADHD 患者中異常性偏好與性障礙的盛行率觀察</h3>
+      <p class="journal-source">Journal of psychiatric research</p>
+      <p>相較於一般群體，成人 ADHD 患者（尤其是男性）表現出窺視症、暴露狂和性施虐等異常性偏好的比例有偏高的趨勢。</p>
+      <div class="card-footer">
+        <span class="tag">成人ADHD</span><span class="tag">成癮與衝動</span>
+        <a href="https://pubmed.ncbi.nlm.nih.gov/41905118/" target="_blank" rel="noopener">PubMed →</a>
+      </div>
+    </div>
+    <div class="news-card">
+      <div class="card-header-row">
+        <span class="emoji-sm">⚠️</span>
+        <span class="utility-low utility-sm">低</span>
+      </div>
+      <h3>ADHD：漏診與誤治在真實世界造成的嚴重後果</h3>
+      <p class="journal-source">The British journal of psychiatry : the journal of mental science</p>
+      <p>評論文章指出，由於 ADHD 診斷效度仍存在爭議，導致許多成人患者被漏診或誤治，這不僅無法滿足患者需求，更可能加劇壽命縮短的風險。</p>
+      <div class="card-footer">
+        <span class="tag">成人ADHD</span><span class="tag">診斷評估</span>
+        <a href="https://pubmed.ncbi.nlm.nih.gov/41725173/" target="_blank" rel="noopener">PubMed →</a>
+      </div>
+    </div></div>
+
+  <div class="topic-section section"><div class="section-title"><span class="section-icon">📊</span>主題分佈</div>
+      <div class="topic-row">
+        <span class="topic-name">成人ADHD</span>
+        <div class="topic-bar-bg"><div class="topic-bar" style="width:100%"></div></div>
+        <span class="topic-count">12</span>
+      </div>
+      <div class="topic-row">
+        <span class="topic-name">診斷評估</span>
+        <div class="topic-bar-bg"><div class="topic-bar" style="width:42%"></div></div>
+        <span class="topic-count">5</span>
+      </div>
+      <div class="topic-row">
+        <span class="topic-name">藥物安全</span>
+        <div class="topic-bar-bg"><div class="topic-bar" style="width:17%"></div></div>
+        <span class="topic-count">2</span>
+      </div>
+      <div class="topic-row">
+        <span class="topic-name">神經科學</span>
+        <div class="topic-bar-bg"><div class="topic-bar" style="width:42%"></div></div>
+        <span class="topic-count">5</span>
+      </div>
+      <div class="topic-row">
+        <span class="topic-name">女性ADHD</span>
+        <div class="topic-bar-bg"><div class="topic-bar" style="width:25%"></div></div>
+        <span class="topic-count">3</span>
+      </div>
+      <div class="topic-row">
+        <span class="topic-name">共病症</span>
+        <div class="topic-bar-bg"><div class="topic-bar" style="width:25%"></div></div>
+        <span class="topic-count">3</span>
+      </div>
+      <div class="topic-row">
+        <span class="topic-name">數位健康</span>
+        <div class="topic-bar-bg"><div class="topic-bar" style="width:17%"></div></div>
+        <span class="topic-count">2</span>
+      </div>
+      <div class="topic-row">
+        <span class="topic-name">藥物治療</span>
+        <div class="topic-bar-bg"><div class="topic-bar" style="width:17%"></div></div>
+        <span class="topic-count">2</span>
+      </div></div>
+
+  <div class="keywords-section section"><div class="section-title"><span class="section-icon">🏷️</span>關鍵字</div><div class="keywords"><span class="keyword">成人ADHD</span><span class="keyword">情緒調節</span><span class="keyword">藥物安全</span><span class="keyword">女性ADHD</span><span class="keyword">數位健康</span><span class="keyword">診斷評估</span></div></div>
+
+  <div class="links-section">
+    <a href="https://www.leepsyclinic.com/" class="link-card" target="_blank" rel="noopener">
+      <span class="link-icon">🏥</span>
+      <div><span class="link-name">李政洋身心診所</span><span class="link-desc">專業身心科診所，提供成人 ADHD 評估與治療</span></div>
+      <span class="link-arrow">→</span>
+    </a>
+    <a href="https://blog.leepsyclinic.com/" class="link-card" target="_blank" rel="noopener">
+      <span class="link-icon">📬</span>
+      <div><span class="link-name">訂閱電子報</span><span class="link-desc">定期收到最新身心健康資訊與研究整理</span></div>
+      <span class="link-arrow">→</span>
+    </a>
+    <a href="https://buymeacoffee.com/CYlee" class="link-card" target="_blank" rel="noopener">
+      <span class="link-icon">☕</span>
+      <div><span class="link-name">Buy Me a Coffee</span><span class="link-desc">支持本研究日報持續運作</span></div>
+      <span class="link-arrow">→</span>
+    </a>
+  </div>
+
+  <footer>
+    <span>資料來源：PubMed &middot; 分析模型：glm-5.1</span>
+    <span><a href="https://github.com/u8901006/Adult-ADHD">GitHub</a></span>
+  </footer>
+</div>
+</body>
+</html>
