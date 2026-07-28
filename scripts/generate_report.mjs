@@ -1,9 +1,9 @@
 import { readFileSync, writeFileSync, mkdirSync } from 'node:fs';
 import { dirname, resolve } from 'node:path';
 
-const API_BASE = process.env.ZHIPU_API_BASE || 'https://open.bigmodel.cn/api/coding/paas/v4';
-const MODEL_CHAIN = ['glm-5-turbo', 'glm-5.1', 'glm-4.7', 'glm-4.7-flash', 'glm-4-plus', 'glm-4-flash', 'glm-4'];
-const MAX_TOKENS = 50000;
+const API_BASE = 'https://integrate.api.nvidia.com/v1';
+const MODEL_CHAIN = ['nvidia/nemotron-3-super-120b-a12b', 'nvidia/nemotron-3-nano-30b-a3b'];
+const MAX_TOKENS = 16384;
 const API_TIMEOUT_MS = 480000;
 const MAX_RETRIES = 1;
 
@@ -33,7 +33,7 @@ const TAG_OPTIONS = [
 
 function parseArgs() {
   const args = process.argv.slice(2);
-  const opts = { input: '', output: '', apiKey: process.env.ZHIPU_API_KEY || '' };
+  const opts = { input: '', output: '', apiKey: process.env.NVIDIA_API_KEY || '' };
   for (let i = 0; i < args.length; i++) {
     if (args[i] === '--input' && args[i + 1]) opts.input = args[i + 1];
     if (args[i] === '--output' && args[i + 1]) opts.output = args[i + 1];
@@ -86,7 +86,7 @@ function extractJson(text) {
   return null;
 }
 
-async function callZhipuAPI(apiKey, payload, timeout) {
+async function callNvidiaAPI(apiKey, payload, timeout) {
   const resp = await fetch(`${API_BASE}/chat/completions`, {
     method: 'POST',
     headers: {
@@ -167,12 +167,14 @@ ${papersText}
             { role: 'system', content: SYSTEM_PROMPT },
             { role: 'user', content: prompt },
           ],
-          temperature: 0.3,
-          top_p: 0.9,
+          temperature: 1.0,
+          top_p: 0.95,
           max_tokens: MAX_TOKENS,
+          stream: false,
+          chat_template_kwargs: { enable_thinking: false },
         };
 
-        const resp = await callZhipuAPI(apiKey, payload, API_TIMEOUT_MS);
+        const resp = await callNvidiaAPI(apiKey, payload, API_TIMEOUT_MS);
 
         if (resp.status === 429) {
           const wait = 60 * (attempt + 1);
@@ -397,7 +399,7 @@ footer a:hover{color:var(--accent)}
       <div class="header-meta">
         <span class="badge badge-date">📅 ${dateDisplay}（週${weekDay}）</span>
         <span class="badge badge-count">📊 ${totalCount} 篇文獻</span>
-        <span class="badge badge-source">Powered by PubMed + Zhipu AI</span>
+        <span class="badge badge-source">Powered by PubMed + NVIDIA AI</span>
       </div>
     </div>
   </header>
@@ -445,7 +447,7 @@ footer a:hover{color:var(--accent)}
 async function main() {
   const opts = parseArgs();
   if (!opts.apiKey) {
-    console.error('[ERROR] No API key. Set ZHIPU_API_KEY env var or use --api-key');
+    console.error('[ERROR] No API key. Set NVIDIA_API_KEY env var or use --api-key');
     process.exit(1);
   }
   if (!opts.input || !opts.output) {
