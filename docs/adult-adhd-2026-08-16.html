@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Adult ADHD Daily &middot; 成人 ADHD 文獻日報 &middot; 2026年8月16日</title>
+<meta name="description" content="2026年8月16日 成人注意力不足過動症文獻日報，由 AI 自動彙整 PubMed 最新論文"/>
+<style>
+:root{--bg:#f6f1e8;--surface:#fffaf2;--line:#d8c5ab;--text:#2b2118;--muted:#766453;--accent:#8c4f2b;--accent-soft:#ead2bf;--card-bg:color-mix(in srgb,var(--surface) 92%,white)}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+body{background:radial-gradient(circle at top,#fff6ea 0,var(--bg) 55%,#ead8c6 100%);color:var(--text);font-family:"Noto Sans TC","PingFang TC","Helvetica Neue",Arial,sans-serif;min-height:100vh;overflow-x:hidden}
+.container{position:relative;z-index:1;max-width:880px;margin:0 auto;padding:60px 32px 80px}
+header{display:flex;align-items:center;gap:16px;margin-bottom:52px;animation:fadeDown .6s ease both}
+.logo{width:48px;height:48px;border-radius:14px;background:var(--accent);display:flex;align-items:center;justify-content:center;font-size:22px;flex-shrink:0;box-shadow:0 4px 20px rgba(140,79,43,.25)}
+.header-text h1{font-size:22px;font-weight:700;color:var(--text);letter-spacing:-.3px}
+.header-meta{display:flex;gap:8px;margin-top:6px;flex-wrap:wrap;align-items:center}
+.badge{display:inline-block;padding:3px 10px;border-radius:20px;font-size:11px;letter-spacing:.3px}
+.badge-date{background:var(--accent-soft);border:1px solid var(--line);color:var(--accent)}
+.badge-count{background:rgba(140,79,43,.06);border:1px solid var(--line);color:var(--muted)}
+.badge-source{background:transparent;color:var(--muted);font-size:11px;padding:0 4px}
+.summary-card{background:var(--card-bg);border:1px solid var(--line);border-radius:24px;padding:28px 32px;margin-bottom:32px;box-shadow:0 20px 60px rgba(61,36,15,.06);animation:fadeUp .5s ease .1s both}
+.summary-card h2{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:1.6px;color:var(--accent);margin-bottom:16px}
+.summary-text{font-size:15px;line-height:1.8;color:var(--text)}
+.section{margin-bottom:36px;animation:fadeUp .5s ease both}
+.section-title{display:flex;align-items:center;gap:10px;font-size:17px;font-weight:700;color:var(--text);margin-bottom:16px;padding-bottom:12px;border-bottom:1px solid var(--line)}
+.section-icon{width:28px;height:28px;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:14px;flex-shrink:0;background:var(--accent-soft)}
+.news-card{background:var(--card-bg);border:1px solid var(--line);border-radius:24px;padding:22px 26px;margin-bottom:12px;box-shadow:0 8px 30px rgba(61,36,15,.04);transition:background .2s,border-color .2s,transform .2s}
+.news-card:hover{transform:translateY(-2px);box-shadow:0 12px 40px rgba(61,36,15,.08)}
+.news-card.featured{border-left:3px solid var(--accent)}
+.news-card.featured:hover{border-color:var(--accent)}
+.card-header{display:flex;align-items:center;gap:8px;margin-bottom:10px}
+.rank-badge{background:var(--accent);color:#fff7f0;font-weight:700;font-size:12px;padding:2px 8px;border-radius:6px}
+.emoji-icon{font-size:18px}
+.card-header-row{display:flex;align-items:center;gap:8px;margin-bottom:8px}
+.emoji-sm{font-size:14px}
+.news-card h3{font-size:15px;font-weight:600;color:var(--text);margin-bottom:8px;line-height:1.5}
+.journal-source{font-size:12px;color:var(--accent);margin-bottom:8px;opacity:.8}
+.news-card p{font-size:13.5px;line-height:1.75;color:var(--muted)}
+.utility-reason{font-size:12px!important;color:var(--accent)!important;opacity:.85;margin-top:4px}
+.card-footer{margin-top:12px;display:flex;flex-wrap:wrap;gap:6px;align-items:center}
+.tag{padding:2px 9px;background:var(--accent-soft);border-radius:999px;font-size:11px;color:var(--accent)}
+.news-card a{font-size:12px;color:var(--accent);text-decoration:none;opacity:.7;margin-left:auto}
+.news-card a:hover{opacity:1}
+.utility-high{color:#5a7a3a;font-size:11px;font-weight:600;padding:2px 8px;background:rgba(90,122,58,.1);border-radius:4px}
+.utility-mid{color:#9f7a2e;font-size:11px;font-weight:600;padding:2px 8px;background:rgba(159,122,46,.1);border-radius:4px}
+.utility-low{color:var(--muted);font-size:11px;font-weight:600;padding:2px 8px;background:rgba(118,100,83,.08);border-radius:4px}
+.utility-sm{font-size:10px}
+.pico-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:12px;padding:12px;background:rgba(255,253,249,.8);border-radius:14px;border:1px solid var(--line)}
+.pico-item{display:flex;gap:8px;align-items:baseline}
+.pico-label{font-size:10px;font-weight:700;color:#fff7f0;background:var(--accent);padding:2px 6px;border-radius:4px;flex-shrink:0}
+.pico-text{font-size:12px;color:var(--muted);line-height:1.4}
+.keywords-section{margin-bottom:36px}
+.keywords{display:flex;flex-wrap:wrap;gap:8px;margin-top:8px}
+.keyword{padding:5px 14px;background:var(--accent-soft);border:1px solid var(--line);border-radius:20px;font-size:12px;color:var(--accent);cursor:default;transition:background .2s}
+.keyword:hover{background:rgba(140,79,43,.18)}
+.topic-section{margin-bottom:36px}
+.topic-row{display:flex;align-items:center;gap:10px;margin-bottom:8px}
+.topic-name{font-size:13px;color:var(--muted);width:120px;flex-shrink:0;text-align:right}
+.topic-bar-bg{flex:1;height:8px;background:var(--line);border-radius:4px;overflow:hidden}
+.topic-bar{height:100%;background:linear-gradient(90deg,var(--accent),#c47a4a);border-radius:4px;transition:width .6s ease}
+.topic-count{font-size:12px;color:var(--accent);width:24px}
+.links-section{margin-top:48px;display:flex;flex-direction:column;gap:12px;animation:fadeUp .5s ease .4s both}
+.link-card{display:flex;align-items:center;gap:14px;padding:18px 24px;background:var(--card-bg);border:1px solid var(--line);border-radius:24px;text-decoration:none;color:var(--text);transition:all .2s;box-shadow:0 8px 30px rgba(61,36,15,.04)}
+.link-card:hover{border-color:var(--accent);transform:translateY(-2px);box-shadow:0 12px 40px rgba(61,36,15,.08)}
+.link-icon{font-size:28px;flex-shrink:0}
+.link-name{font-size:15px;font-weight:700;color:var(--text);flex:1}
+.link-desc{font-size:12px;color:var(--muted);margin-top:2px}
+.link-arrow{font-size:18px;color:var(--accent);font-weight:700}
+footer{margin-top:32px;padding-top:22px;border-top:1px solid var(--line);font-size:11.5px;color:var(--muted);display:flex;justify-content:space-between;animation:fadeUp .5s ease .5s both}
+footer a{color:var(--muted);text-decoration:none}
+footer a:hover{color:var(--accent)}
+@keyframes fadeDown{from{opacity:0;transform:translateY(-16px)}to{opacity:1;transform:translateY(0)}}
+@keyframes fadeUp{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}
+@media(max-width:600px){.container{padding:36px 18px 60px}.summary-card,.news-card{padding:20px 18px}.pico-grid{grid-template-columns:1fr}footer{flex-direction:column;gap:6px;text-align:center}.topic-name{width:80px;font-size:11px}.links-section{gap:10px}.link-card{padding:14px 18px}}
+</style>
+</head>
+<body>
+<div class="container">
+  <header>
+    <div class="logo">🧠</div>
+    <div class="header-text">
+      <h1>Adult ADHD Daily &middot; 成人 ADHD 文獻日報</h1>
+      <div class="header-meta">
+        <span class="badge badge-date">📅 2026年8月16日（週日）</span>
+        <span class="badge badge-count">📊 5 篇文獻</span>
+        <span class="badge badge-source">Powered by PubMed + NVIDIA AI</span>
+      </div>
+    </div>
+  </header>
+
+  <div class="summary-card">
+    <h2>📋 今日文獻趨勢</h2>
+    <p class="summary-text">今日文獻聚焦於成人ADHD的共病心理健康問題，特別是焦慮與憂鬱的心理治療反應，顯示雖有改善但效果較非ADHD群弱，提醒需個別化介入；同時也有關注ADHD特徵如何影響其他疾病（如癲癇）的主觀症狀體驗，提升跨領域臨床辨識的重要性。</p>
+  </div>
+
+  <div class="section"><div class="section-title"><span class="section-icon">⭐</span>今日精選 TOP Picks</div>
+    <div class="news-card featured">
+      <div class="card-header">
+        <span class="rank-badge">#1</span>
+        <span class="emoji-icon">🧠</span>
+        <span class="utility-high">高實用性</span>
+      </div>
+      <h3>成人ADHD患者接受焦慮憂鬱心理治療的療效較弱，但仍具臨床意義改善</h3>
+      <p class="journal-source">The Lancet regional health. Europe &middot; Effectiveness of psychological therapies for depression and anxiety in adults with and without ADHD in England: a retrospective cohort study.</p>
+      <p>雖然ADHD患者在NHS心理治療後憂鬱與焦慮症狀有中等至大幅度改善，但其可靠改善與康復率顯著低於非ADHD對照組，提示需調整心理療法以更適應此群體。</p>
+      
+      <div class="pico-grid">
+        <div class="pico-item"><span class="pico-label">P</span><span class="pico-text">300萬+英國18歲以上接受NHS Talking Therapies的成人，其中ADHD診斷組N=13,693，非ADHD匹配對照組N=13,693</span></div>
+        <div class="pico-item"><span class="pico-label">I</span><span class="pico-text">標準ised心理治療（CBT為主）針對憂鬱與焦慮</span></div>
+        <div class="pico-item"><span class="pico-label">C</span><span class="pico-text">ADHD診斷組 vs 經傾向得分匹配的無ADHD對照組</span></div>
+        <div class="pico-item"><span class="pico-label">O</span><span class="pico-text">ADHD組憂慮與焦慮的前後效應大小均達Cohen's d ≈ -0.72（中等至大幅度改善），但可靠改善OR=0.77、可靠康復OR=0.69、可靠惡化OR=1.38，皆顯著較差</span></div>
+      </div>
+      <p class="utility-reason">💡 直接指導臨床醫師：ADHD患者可從標準憂鬱焦慮療法獲益，但效果較弱，需考慮加強或適應性調整（如加長疗程、融入ADHD策略）</p>
+      <div class="card-footer">
+        <span class="tag">成人ADHD</span><span class="tag">心理治療</span><span class="tag">憂鬱症</span><span class="tag">焦慮症</span><span class="tag">共病症</span><span class="tag">系統性回顧</span>
+        <a href="https://pubmed.ncbi.nlm.nih.gov/42602586/" target="_blank" rel="noopener">閱讀原文 →</a>
+      </div>
+    </div>
+    <div class="news-card featured">
+      <div class="card-header">
+        <span class="rank-badge">#2</span>
+        <span class="emoji-icon">⚡</span>
+        <span class="utility-mid">中實用性</span>
+      </div>
+      <h3>癲癇患者的主觀記憶抱怨更多反映注意力不足與情緒問題，而非真實記憶損害</h3>
+      <p class="journal-source">Epilepsy &amp; behavior : E&amp;B &middot; Subjective memory complaints in adults with epilepsy reflect affective and attentional processes rather than objective memory performance.</p>
+      <p>在癲癇成人中，主觀記憶評分與注意力不足（CAARS-A）和抑鬱症狀顯著負相關，但與客觀記憶表現關聯薄弱，提醒臨床評估需區分主觀症狀與神經認知缺損。</p>
+      
+      <div class="pico-grid">
+        <div class="pico-item"><span class="pico-label">P</span><span class="pico-text">184名成人癲癇患者</span></div>
+        <div class="pico-item"><span class="pico-label">I</span><span class="pico-text">無介入，橫斷式評估主觀記憶自我評量（GSMA）</span></div>
+        <div class="pico-item"><span class="pico-label">C</span><span class="pico-text">主觀記憶評分 vs 客觀神經心理測驗、抑鬱 (BDI-II)、注意力不足特質 (CAARS-A)</span></div>
+        <div class="pico-item"><span class="pico-label">O</span><span class="pico-text">主觀記憶評分與注意力不足特質中等負相關 (r = -0.536)、與抑鬱症狀中等負相關 (r = -0.412)，但與客觀記憶表現關聯極弱</span></div>
+      </div>
+      <p class="utility-reason">💡 提醒神經科與精神科醫師：癲癇患者報告的記憶問題可能源於ADHD特質或情緒狀態，誤歸為癲癇相關認知衰退可能導致過度檢查或誤用藥物</p>
+      <div class="card-footer">
+        <span class="tag">注意力不足過動症</span><span class="tag">共病症</span><span class="tag">執行功能</span><span class="tag">情緒調節</span><span class="tag">神經科學</span>
+        <a href="https://pubmed.ncbi.nlm.nih.gov/42288104/" target="_blank" rel="noopener">閱讀原文 →</a>
+      </div>
+    </div>
+    <div class="news-card featured">
+      <div class="card-header">
+        <span class="rank-badge">#3</span>
+        <span class="emoji-icon">📊</span>
+        <span class="utility-mid">中實用性</span>
+      </div>
+      <h3>兒青心理健康研究發現維度模型較類別診斷更能捕捉注意力問題的跨群差異</h3>
+      <p class="journal-source">Journal of affective disorders &middot; Dimensional and categorical approaches to behavioral-emotional problems in children and adolescents with mental disorders: A cross-sectional study.</p>
+      <p>維度評估方式（如連續量測注意力）較診斷類別（如ADHD診斷）更能揭示不同診斷群組間的注意力問題差異，支持跨診斷維度研究的重要性。</p>
+      
+      <div class="pico-grid">
+        <div class="pico-item"><span class="pico-label">P</span><span class="pico-text">1466名義大利3-18歲兒童青少年，分為10種DSM診斷群（含ADHD）</span></div>
+        <div class="pico-item"><span class="pico-label">I</span><span class="pico-text">無介入，比較維度量表（行為檢查表） vs 類別診斷模型</span></div>
+        <div class="pico-item"><span class="pico-label">C</span><span class="pico-text">維度評分 vs DSM類別診斷在內化、外化、注意力問題上的群組差異檢測力</span></div>
+        <div class="pico-item"><span class="pico-label">O</span><span class="pico-text">維度模型在偵測注意力問題上的群組間差異較類別模型更敏感，例如在ADHD群中仍能發現較多診斷群具有注意力挑戰</span></div>
+      </div>
+      <p class="utility-reason">💡 雖為兒青研究，但提醒成人ADHD臨床師：診斷不應過度依賴類別 cutoff，維度評估（如CAARS、ASRS）更能捕捉功能影響與治療需求變化</p>
+      <div class="card-footer">
+        <span class="tag">注意力不足過動症</span><span class="tag">診斷評估</span><span class="tag">執行功能</span><span class="tag">ASRS</span><span class="tag">CAARS</span>
+        <a href="https://pubmed.ncbi.nlm.nih.gov/42155858/" target="_blank" rel="noopener">閱讀原文 →</a>
+      </div>
+    </div>
+    <div class="news-card featured">
+      <div class="card-header">
+        <span class="rank-badge">#4</span>
+        <span class="emoji-icon">🔄</span>
+        <span class="utility-mid">中實用性</span>
+      </div>
+      <h3>雙極症患者服用抗憂鬱藥時躁轉風險與較少共病ADHD顯著相關</h3>
+      <p class="journal-source">Journal of affective disorders &middot; Mood switching in 1629 antidepressant-treated bipolar disorder patients.</p>
+      <p>在雙極症患者中，抗憂鬱藥誘導的躁/輕躁轉發生率為27.6%，且共病ADHD較少是風險因素之一，提示ADHD可能具保護作用或反映不同病理亞型。</p>
+      
+      <div class="pico-grid">
+        <div class="pico-item"><span class="pico-label">P</span><span class="pico-text">1629名 prospectively 評估的雙極症患者（BD1與BD2），平均追蹤4.98年</span></div>
+        <div class="pico-item"><span class="pico-label">I</span><span class="pico-text">抗憂鬱藥物治療</span></div>
+        <div class="pico-item"><span class="pico-label">C</span><span class="pico-text">發生躁轉 vs 未發生躁轉群組</span></div>
+        <div class="pico-item"><span class="pico-label">O</span><span class="pico-text">共病ADHD與較低躁轉風險相關（初步分析中列為顯著因素），與較高抑鬱發作評分、DMI療程、較老年齡、精神病史家族史、自殺企圖等因素並列</span></div>
+      </div>
+      <p class="utility-reason">💡 提醒精神科醫師：評估雙極症患者抗憂鬱藥風險時，應注意共病ADHD的存在可能反轉常見假設，需個別化風險評估而非依賴刻板印象</p>
+      <div class="card-footer">
+        <span class="tag">共病症</span><span class="tag">情緒調節</span><span class="tag">憂鬱症</span><span class="tag">雙極症</span><span class="tag">成人ADHD</span>
+        <a href="https://pubmed.ncbi.nlm.nih.gov/42035800/" target="_blank" rel="noopener">閱讀原文 →</a>
+      </div>
+    </div>
+    <div class="news-card featured">
+      <div class="card-header">
+        <span class="rank-badge">#5</span>
+        <span class="emoji-icon">🧬</span>
+        <span class="utility-low">低實用性</span>
+      </div>
+      <h3>全球 schizotypy 研究發現其皮質特徵與 ADHD、自閉症等神經發育病理有關聯</h3>
+      <p class="journal-source">Molecular psychiatry &middot; Multiscale characterization of cortical signatures in positive and negative schizotypy: a worldwide ENIGMA study.</p>
+      <p>陽性與陰性分裂樣特質各有獨立皮質厚度模式，並分別與包括ADHD在內的神經發育譜系疾病的大腦結構關聯，支持ADHD與精神病譜系的發育生物學交集。</p>
+      
+      <div class="pico-grid">
+        <div class="pico-item"><span class="pico-label">P</span><span class="pico-text">2730名未用藥健康個體（全球樣本）</span></div>
+        <div class="pico-item"><span class="pico-label">I</span><span class="pico-text">無介入，結構MRI測量皮質厚度與schizotypy量表評分</span></div>
+        <div class="pico-item"><span class="pico-label">C</span><span class="pico-text">陽性schizotypy vs 陰性schizotypy 的皮質型態與關聯模式</span></div>
+        <div class="pico-item"><span class="pico-label">O</span><span class="pico-text">陽性schizotypy 與前額葉皮質變薄相關，陰性schizotypy 與邊緣葉皮質變厚相關；前者與精神病高-risk群相似，後者與ADHD、ASD、22q11.2相關</span></div>
+      </div>
+      <p class="utility-reason">💡 基礎神經科學發現，暫無直接臨床應用，但有助理解ADHD與思覺失調譜系在神經發育層級的潛在共病機制</p>
+      <div class="card-footer">
+        <span class="tag">神經影像學</span><span class="tag">神經科學</span><span class="tag">共病症</span><span class="tag">自閉症共病</span><span class="tag">發育神經科學</span>
+        <a href="https://pubmed.ncbi.nlm.nih.gov/42000906/" target="_blank" rel="noopener">閱讀原文 →</a>
+      </div>
+    </div></div>
+
+  
+
+  <div class="topic-section section"><div class="section-title"><span class="section-icon">📊</span>主題分佈</div>
+      <div class="topic-row">
+        <span class="topic-name">成人ADHD</span>
+        <div class="topic-bar-bg"><div class="topic-bar" style="width:100%"></div></div>
+        <span class="topic-count">5</span>
+      </div>
+      <div class="topic-row">
+        <span class="topic-name">心理治療</span>
+        <div class="topic-bar-bg"><div class="topic-bar" style="width:20%"></div></div>
+        <span class="topic-count">1</span>
+      </div>
+      <div class="topic-row">
+        <span class="topic-name">共病症</span>
+        <div class="topic-bar-bg"><div class="topic-bar" style="width:80%"></div></div>
+        <span class="topic-count">4</span>
+      </div>
+      <div class="topic-row">
+        <span class="topic-name">注意力不足過動症</span>
+        <div class="topic-bar-bg"><div class="topic-bar" style="width:60%"></div></div>
+        <span class="topic-count">3</span>
+      </div>
+      <div class="topic-row">
+        <span class="topic-name">憂鬱症</span>
+        <div class="topic-bar-bg"><div class="topic-bar" style="width:40%"></div></div>
+        <span class="topic-count">2</span>
+      </div>
+      <div class="topic-row">
+        <span class="topic-name">焦慮症</span>
+        <div class="topic-bar-bg"><div class="topic-bar" style="width:40%"></div></div>
+        <span class="topic-count">2</span>
+      </div>
+      <div class="topic-row">
+        <span class="topic-name">執行功能</span>
+        <div class="topic-bar-bg"><div class="topic-bar" style="width:40%"></div></div>
+        <span class="topic-count">2</span>
+      </div>
+      <div class="topic-row">
+        <span class="topic-name">情緒調節</span>
+        <div class="topic-bar-bg"><div class="topic-bar" style="width:40%"></div></div>
+        <span class="topic-count">2</span>
+      </div>
+      <div class="topic-row">
+        <span class="topic-name">神經科學</span>
+        <div class="topic-bar-bg"><div class="topic-bar" style="width:40%"></div></div>
+        <span class="topic-count">2</span>
+      </div>
+      <div class="topic-row">
+        <span class="topic-name">診斷評估</span>
+        <div class="topic-bar-bg"><div class="topic-bar" style="width:20%"></div></div>
+        <span class="topic-count">1</span>
+      </div>
+      <div class="topic-row">
+        <span class="topic-name">雙極症</span>
+        <div class="topic-bar-bg"><div class="topic-bar" style="width:20%"></div></div>
+        <span class="topic-count">1</span>
+      </div>
+      <div class="topic-row">
+        <span class="topic-name">自閉症共病</span>
+        <div class="topic-bar-bg"><div class="topic-bar" style="width:40%"></div></div>
+        <span class="topic-count">2</span>
+      </div>
+      <div class="topic-row">
+        <span class="topic-name">神經影像學</span>
+        <div class="topic-bar-bg"><div class="topic-bar" style="width:20%"></div></div>
+        <span class="topic-count">1</span>
+      </div></div>
+
+  <div class="keywords-section section"><div class="section-title"><span class="section-icon">🏷️</span>關鍵字</div><div class="keywords"><span class="keyword">ADHD</span><span class="keyword">心理治療</span><span class="keyword">共病</span><span class="keyword">憂鬱</span><span class="keyword">焦慮</span><span class="keyword">注意力</span><span class="keyword">躁轉</span><span class="keyword">神經影像</span></div></div>
+
+  <div class="links-section">
+    <a href="https://www.leepsyclinic.com/" class="link-card" target="_blank" rel="noopener">
+      <span class="link-icon">🏥</span>
+      <div><span class="link-name">李政洋身心診所</span><span class="link-desc">專業身心科診所，提供成人 ADHD 評估與治療</span></div>
+      <span class="link-arrow">→</span>
+    </a>
+    <a href="https://blog.leepsyclinic.com/" class="link-card" target="_blank" rel="noopener">
+      <span class="link-icon">📬</span>
+      <div><span class="link-name">訂閱電子報</span><span class="link-desc">定期收到最新身心健康資訊與研究整理</span></div>
+      <span class="link-arrow">→</span>
+    </a>
+    <a href="https://buymeacoffee.com/CYlee" class="link-card" target="_blank" rel="noopener">
+      <span class="link-icon">☕</span>
+      <div><span class="link-name">Buy Me a Coffee</span><span class="link-desc">支持本研究日報持續運作</span></div>
+      <span class="link-arrow">→</span>
+    </a>
+  </div>
+
+  <footer>
+    <span>資料來源：PubMed &middot; 分析模型：nvidia/nemotron-3-super-120b-a12b</span>
+    <span><a href="https://github.com/u8901006/Adult-ADHD">GitHub</a></span>
+  </footer>
+</div>
+</body>
+</html>
