@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Adult ADHD Daily &middot; 成人 ADHD 文獻日報 &middot; 2026年8月18日</title>
+<meta name="description" content="2026年8月18日 成人注意力不足過動症文獻日報，由 AI 自動彙整 PubMed 最新論文"/>
+<style>
+:root{--bg:#f6f1e8;--surface:#fffaf2;--line:#d8c5ab;--text:#2b2118;--muted:#766453;--accent:#8c4f2b;--accent-soft:#ead2bf;--card-bg:color-mix(in srgb,var(--surface) 92%,white)}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+body{background:radial-gradient(circle at top,#fff6ea 0,var(--bg) 55%,#ead8c6 100%);color:var(--text);font-family:"Noto Sans TC","PingFang TC","Helvetica Neue",Arial,sans-serif;min-height:100vh;overflow-x:hidden}
+.container{position:relative;z-index:1;max-width:880px;margin:0 auto;padding:60px 32px 80px}
+header{display:flex;align-items:center;gap:16px;margin-bottom:52px;animation:fadeDown .6s ease both}
+.logo{width:48px;height:48px;border-radius:14px;background:var(--accent);display:flex;align-items:center;justify-content:center;font-size:22px;flex-shrink:0;box-shadow:0 4px 20px rgba(140,79,43,.25)}
+.header-text h1{font-size:22px;font-weight:700;color:var(--text);letter-spacing:-.3px}
+.header-meta{display:flex;gap:8px;margin-top:6px;flex-wrap:wrap;align-items:center}
+.badge{display:inline-block;padding:3px 10px;border-radius:20px;font-size:11px;letter-spacing:.3px}
+.badge-date{background:var(--accent-soft);border:1px solid var(--line);color:var(--accent)}
+.badge-count{background:rgba(140,79,43,.06);border:1px solid var(--line);color:var(--muted)}
+.badge-source{background:transparent;color:var(--muted);font-size:11px;padding:0 4px}
+.summary-card{background:var(--card-bg);border:1px solid var(--line);border-radius:24px;padding:28px 32px;margin-bottom:32px;box-shadow:0 20px 60px rgba(61,36,15,.06);animation:fadeUp .5s ease .1s both}
+.summary-card h2{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:1.6px;color:var(--accent);margin-bottom:16px}
+.summary-text{font-size:15px;line-height:1.8;color:var(--text)}
+.section{margin-bottom:36px;animation:fadeUp .5s ease both}
+.section-title{display:flex;align-items:center;gap:10px;font-size:17px;font-weight:700;color:var(--text);margin-bottom:16px;padding-bottom:12px;border-bottom:1px solid var(--line)}
+.section-icon{width:28px;height:28px;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:14px;flex-shrink:0;background:var(--accent-soft)}
+.news-card{background:var(--card-bg);border:1px solid var(--line);border-radius:24px;padding:22px 26px;margin-bottom:12px;box-shadow:0 8px 30px rgba(61,36,15,.04);transition:background .2s,border-color .2s,transform .2s}
+.news-card:hover{transform:translateY(-2px);box-shadow:0 12px 40px rgba(61,36,15,.08)}
+.news-card.featured{border-left:3px solid var(--accent)}
+.news-card.featured:hover{border-color:var(--accent)}
+.card-header{display:flex;align-items:center;gap:8px;margin-bottom:10px}
+.rank-badge{background:var(--accent);color:#fff7f0;font-weight:700;font-size:12px;padding:2px 8px;border-radius:6px}
+.emoji-icon{font-size:18px}
+.card-header-row{display:flex;align-items:center;gap:8px;margin-bottom:8px}
+.emoji-sm{font-size:14px}
+.news-card h3{font-size:15px;font-weight:600;color:var(--text);margin-bottom:8px;line-height:1.5}
+.journal-source{font-size:12px;color:var(--accent);margin-bottom:8px;opacity:.8}
+.news-card p{font-size:13.5px;line-height:1.75;color:var(--muted)}
+.utility-reason{font-size:12px!important;color:var(--accent)!important;opacity:.85;margin-top:4px}
+.card-footer{margin-top:12px;display:flex;flex-wrap:wrap;gap:6px;align-items:center}
+.tag{padding:2px 9px;background:var(--accent-soft);border-radius:999px;font-size:11px;color:var(--accent)}
+.news-card a{font-size:12px;color:var(--accent);text-decoration:none;opacity:.7;margin-left:auto}
+.news-card a:hover{opacity:1}
+.utility-high{color:#5a7a3a;font-size:11px;font-weight:600;padding:2px 8px;background:rgba(90,122,58,.1);border-radius:4px}
+.utility-mid{color:#9f7a2e;font-size:11px;font-weight:600;padding:2px 8px;background:rgba(159,122,46,.1);border-radius:4px}
+.utility-low{color:var(--muted);font-size:11px;font-weight:600;padding:2px 8px;background:rgba(118,100,83,.08);border-radius:4px}
+.utility-sm{font-size:10px}
+.pico-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:12px;padding:12px;background:rgba(255,253,249,.8);border-radius:14px;border:1px solid var(--line)}
+.pico-item{display:flex;gap:8px;align-items:baseline}
+.pico-label{font-size:10px;font-weight:700;color:#fff7f0;background:var(--accent);padding:2px 6px;border-radius:4px;flex-shrink:0}
+.pico-text{font-size:12px;color:var(--muted);line-height:1.4}
+.keywords-section{margin-bottom:36px}
+.keywords{display:flex;flex-wrap:wrap;gap:8px;margin-top:8px}
+.keyword{padding:5px 14px;background:var(--accent-soft);border:1px solid var(--line);border-radius:20px;font-size:12px;color:var(--accent);cursor:default;transition:background .2s}
+.keyword:hover{background:rgba(140,79,43,.18)}
+.topic-section{margin-bottom:36px}
+.topic-row{display:flex;align-items:center;gap:10px;margin-bottom:8px}
+.topic-name{font-size:13px;color:var(--muted);width:120px;flex-shrink:0;text-align:right}
+.topic-bar-bg{flex:1;height:8px;background:var(--line);border-radius:4px;overflow:hidden}
+.topic-bar{height:100%;background:linear-gradient(90deg,var(--accent),#c47a4a);border-radius:4px;transition:width .6s ease}
+.topic-count{font-size:12px;color:var(--accent);width:24px}
+.links-section{margin-top:48px;display:flex;flex-direction:column;gap:12px;animation:fadeUp .5s ease .4s both}
+.link-card{display:flex;align-items:center;gap:14px;padding:18px 24px;background:var(--card-bg);border:1px solid var(--line);border-radius:24px;text-decoration:none;color:var(--text);transition:all .2s;box-shadow:0 8px 30px rgba(61,36,15,.04)}
+.link-card:hover{border-color:var(--accent);transform:translateY(-2px);box-shadow:0 12px 40px rgba(61,36,15,.08)}
+.link-icon{font-size:28px;flex-shrink:0}
+.link-name{font-size:15px;font-weight:700;color:var(--text);flex:1}
+.link-desc{font-size:12px;color:var(--muted);margin-top:2px}
+.link-arrow{font-size:18px;color:var(--accent);font-weight:700}
+footer{margin-top:32px;padding-top:22px;border-top:1px solid var(--line);font-size:11.5px;color:var(--muted);display:flex;justify-content:space-between;animation:fadeUp .5s ease .5s both}
+footer a{color:var(--muted);text-decoration:none}
+footer a:hover{color:var(--accent)}
+@keyframes fadeDown{from{opacity:0;transform:translateY(-16px)}to{opacity:1;transform:translateY(0)}}
+@keyframes fadeUp{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}
+@media(max-width:600px){.container{padding:36px 18px 60px}.summary-card,.news-card{padding:20px 18px}.pico-grid{grid-template-columns:1fr}footer{flex-direction:column;gap:6px;text-align:center}.topic-name{width:80px;font-size:11px}.links-section{gap:10px}.link-card{padding:14px 18px}}
+</style>
+</head>
+<body>
+<div class="container">
+  <header>
+    <div class="logo">🧠</div>
+    <div class="header-text">
+      <h1>Adult ADHD Daily &middot; 成人 ADHD 文獻日報</h1>
+      <div class="header-meta">
+        <span class="badge badge-date">📅 2026年8月18日（週二）</span>
+        <span class="badge badge-count">📊 12 篇文獻</span>
+        <span class="badge badge-source">Powered by PubMed + NVIDIA AI</span>
+      </div>
+    </div>
+  </header>
+
+  <div class="summary-card">
+    <h2>📋 今日文獻趨勢</h2>
+    <p class="summary-text">今日文獻聚焦成人ADHD的神經生物學機制與長期功能影響，特別是白質功能連接性與縱貫研究證實其對認知、情緒及學業表現的持續影響，臨床意義高。</p>
+  </div>
+
+  <div class="section"><div class="section-title"><span class="section-icon">⭐</span>今日精選 TOP Picks</div>
+    <div class="news-card featured">
+      <div class="card-header">
+        <span class="rank-badge">#1</span>
+        <span class="emoji-icon">🧠</span>
+        <span class="utility-high">高實用性</span>
+      </div>
+      <h3>白質功能連接性獨立預測大腦年齡、認知與精神病理，超越灰質連接性</h3>
+      <p class="journal-source">Proceedings of the National Academy of Sciences of the United States of America &middot; White-matter functional connectivity uniquely predicts brain age, cognition, and psychopathology beyond gray-matter connectivity.</p>
+      <p>白質功能連接性在預測大腦年齡、認知表現及ADHD症狀方面具有獨立且非冗餘的預測力，為理解ADHD的神經生物學基礎提供關鍵證據。</p>
+      
+      <div class="pico-grid">
+        <div class="pico-item"><span class="pico-label">P</span><span class="pico-text">橫跨兒童至青年期的四個獨立發育隊列（總 n = 2,370），另外包含認知 (n=4,388) 與ADHD症狀 (n=4,465) 的樣本</span></div>
+        <div class="pico-item"><span class="pico-label">I</span><span class="pico-text">無（觀察性研究）</span></div>
+        <div class="pico-item"><span class="pico-label">C</span><span class="pico-text">控制灰質功能連接性後檢視白質功能連接性的獨立貢獻</span></div>
+        <div class="pico-item"><span class="pico-label">O</span><span class="pico-text">白質功能連接性顯著預測腦年齡、認知表現及ADHD症狀，即使控制灰質連接性後仍具獨立預測力</span></div>
+      </div>
+      <p class="utility-reason">💡 揭示白質網路在ADHD中的獨特神經機制，為未來生物標誌物開發與個體化治療提供方向</p>
+      <div class="card-footer">
+        <span class="tag">神經影像學</span><span class="tag">神經科學</span><span class="tag">執行功能</span><span class="tag">成人ADHD</span>
+        <a href="https://pubmed.ncbi.nlm.nih.gov/42574643/" target="_blank" rel="noopener">閱讀原文 →</a>
+      </div>
+    </div>
+    <div class="news-card featured">
+      <div class="card-header">
+        <span class="rank-badge">#2</span>
+        <span class="emoji-icon">📈</span>
+        <span class="utility-high">高實用性</span>
+      </div>
+      <h3>成人ADHD患者18年縱貫研究：童年ADHD預測成年多域功能不良，持續症狀為關鍵風險因子</h3>
+      <p class="journal-source">Psychiatry research &middot; Growing up with ADHD: findings from an 18-year longitudinal follow-up study of adults with childhood ADHD, their siblings, and controls.</p>
+      <p>童年ADHD顯著增加成人多重功能受損風險（超過60%的結果顯著較差），但僅持續診斷的ADHD組顯示更糟的精神、行為、適應及身體健康功能，顯示症狀持續性是關鍵。</p>
+      
+      <div class="pico-grid">
+        <div class="pico-item"><span class="pico-label">P</span><span class="pico-text">童年ADHD群 (n=154)、無ADHD的兄弟姐妹 (n=138)、對照組 (n=129)，平均隨訪年齡27-30歲</span></div>
+        <div class="pico-item"><span class="pico-label">I</span><span class="pico-text">無（觀察性縱貫研究）</span></div>
+        <div class="pico-item"><span class="pico-label">C</span><span class="pico-text">ADHD群 vs 兄弟姐妹 vs 對照群；進一步區分持續ADHD、緩解ADHD vs 對照</span></div>
+        <div class="pico-item"><span class="pico-label">O</span><span class="pico-text">ADHD群在精神、行為/情緒、學業/職業、適應、神經認知、身體健康及醫療使用等&gt;60%功能域顯著較差；持續ADHD組較緩解組更糟；兄弟姐妹與對照無顯著差異</span></div>
+      </div>
+      <p class="utility-reason">💡 證實童年ADHD是成人功能不良的重要風險因子，強調早期干預及持續治療對改善長遠預後的重要性</p>
+      <div class="card-footer">
+        <span class="tag">成人ADHD</span><span class="tag">縱貫性研究</span><span class="tag">精神健康</span><span class="tag">執行功能</span><span class="tag">情緒調節</span><span class="tag">學業表現</span><span class="tag">職場功能</span>
+        <a href="https://pubmed.ncbi.nlm.nih.gov/42365682/" target="_blank" rel="noopener">閱讀原文 →</a>
+      </div>
+    </div>
+    <div class="news-card featured">
+      <div class="card-header">
+        <span class="rank-badge">#3</span>
+        <span class="emoji-icon">💻</span>
+        <span class="utility-high">高實用性</span>
+      </div>
+      <h3>澳洲遠距精神醫療擴張顯著提升ADHD處方與視訊診療比例，尤其惠及女性與偏遠地區患者</h3>
+      <p class="journal-source">Psychiatry research &middot; Effect of Australian telepsychiatry services on attention-deficit hyperactivity disorder prescriptions.</p>
+      <p>遠距精神醫療政策整合後，ADHD處方率從4.3%升至11.8%，視訊診療佔ADHD處方的比例從1.8%升至23.4%，顯著改善女性及偏遠地區的醫療可及性。</p>
+      
+      <div class="pico-grid">
+        <div class="pico-item"><span class="pico-label">P</span><span class="pico-text">澳洲全國Medicare與藥品福利計畫數據（2017-2023），近4百萬次精神科諮詢</span></div>
+        <div class="pico-item"><span class="pico-label">I</span><span class="pico-text">遠距精神醫療政策整合與擴張（視訊、電話與面對面診療模式）</span></div>
+        <div class="pico-item"><span class="pico-label">C</span><span class="pico-text">政策整合前後視訊診療在ADHD處方中的佔比變化；同時與其他精神藥物視訊處方趨勢比較</span></div>
+        <div class="pico-item"><span class="pico-label">O</span><span class="pico-text">ADHD處方總數增加1.7倍；視訊診療佔ADHD處方比例增加12.9百分點；女性與地理偏遠者更可能使用視訊開方；ADHD藥物視訊處方成長幅度�著高於其他精神藥物</span></div>
+      </div>
+      <p class="utility-reason">💡 提供真實世界證據，支持遠距醫療在減少ADHD診療地理與性別不平等方面的有效性，適合作為衛生政策參考</p>
+      <div class="card-footer">
+        <span class="tag">成人ADHD</span><span class="tag">數位健康</span><span class="tag">女性ADHD</span><span class="tag">公共衛生</span><span class="tag">藥物治療</span>
+        <a href="https://pubmed.ncbi.nlm.nih.gov/42391981/" target="_blank" rel="noopener">閱讀原文 →</a>
+      </div>
+    </div>
+    <div class="news-card featured">
+      <div class="card-header">
+        <span class="rank-badge">#4</span>
+        <span class="emoji-icon">😴</span>
+        <span class="utility-mid">中實用性</span>
+      </div>
+      <h3>拖延與睡眠問題的關聯在無ADHD特質者中由夕惰性部分中介，但ADHD特質者此路徑不成立</h3>
+      <p class="journal-source">Sleep medicine &middot; Association of procrastination on eveningness and sleep problems.</p>
+      <p>拖延與睡眠障礙顯著正相關，且此關聯部分經由夕惰性（晚型昏昏傾向）中介，但僅在無ADHD特質者中成立，顯示ADHD可能改變拖延-昏夜傾向-睡眠問題的發展路徑。</p>
+      
+      <div class="pico-grid">
+        <div class="pico-item"><span class="pico-label">P</span><span class="pico-text">2,971名18-59歲成人橫斷式網路問卷調查</span></div>
+        <div class="pico-item"><span class="pico-label">I</span><span class="pico-text">無（橫斷式研究）</span></div>
+        <div class="pico-item"><span class="pico-label">C</span><span class="pico-text">調整人口統計、生活型態、睡眠衛生及ADHD特質後，檢視拖延對睡眠障礙的直接與經由夕惰性的間接效應</span></div>
+        <div class="pico-item"><span class="pico-label">O</span><span class="pico-text">拖延直接增加睡眠障礙（β=0.43）；透過夕惰性間接增加（β=0.07）；此中介效應僅在無ADHD特質組顯著，ADHD特質組不顯著</span></div>
+      </div>
+      <p class="utility-reason">💡 提醒臨床醫師在評估ADHD患者睡眠問題時，需考慮其可能與拖延及昏夜傾向的關聯模式異於一般人群，避免過度歸因</p>
+      <div class="card-footer">
+        <span class="tag">成人ADHD</span><span class="tag">睡眠障礙</span><span class="tag">情緒調節</span><span class="tag">執行功能</span>
+        <a href="https://pubmed.ncbi.nlm.nih.gov/42470901/" target="_blank" rel="noopener">閱讀原文 →</a>
+      </div>
+    </div>
+    <div class="news-card featured">
+      <div class="card-header">
+        <span class="rank-badge">#5</span>
+        <span class="emoji-icon">🎓</span>
+        <span class="utility-mid">中實用性</span>
+      </div>
+      <h3>雙胞胎研究顯示學習動機是童年ADHD影響成年教育成就的關鍵中介變數，而非單純學業表現或行為問題</h3>
+      <p class="journal-source">Journal of clinical child and adolescent psychology : the official journal for the Society of Clinical Child and Adolescent Psychology, American Psychological Association, Division 53 &middot; Which School Experiences Matter? A Co-Twin Analysis Linking Childhood ADHD to Adult Educational Attainment.</p>
+      <p>在控制 familiale 共變因後，僅學習動機（而非成績或行為問題）在童年ADHD與成年教育 attainment 間顯著中介，支持動機與參與度為改善ADHD學生長遠學業預後的重要介入目標。</p>
+      
+      <div class="pico-grid">
+        <div class="pico-item"><span class="pico-label">P</span><span class="pico-text">明尼蘇達雙胞胎家族研究中的3,762名雙胞胎（1,881對同性別雙胞胎），童年ADHD症狀於11或17歲評估， mediators於17歲測量，教育 attainment於平均34.7歲成年評估</span></div>
+        <div class="pico-item"><span class="pico-label">I</span><span class="pico-text">無（觀察性研究）</span></div>
+        <div class="pico-item"><span class="pico-label">C</span><span class="pico-text">個人層級中介模式 vs 雙胞胎對照模式（控制共享基因與環境）</span></div>
+        <div class="pico-item"><span class="pico-label">O</span><span class="pico-text">個人層級：學業表現、動機及社會/行為因素皆顯著中介；雙胞胎對照後：僅學習動機的中介效應持續顯著，支持其可能具因果意義</span></div>
+      </div>
+      <p class="utility-reason">💡 強調提升ADHD學生的學習動機與自我效能，可能比補習或行為矯正更能改善其長遠教育表現</p>
+      <div class="card-footer">
+        <span class="tag">成人ADHD</span><span class="tag">學業表現</span><span class="tag">心理治療</span><span class="tag">執行功能</span><span class="tag">縱貫性研究</span>
+        <a href="https://pubmed.ncbi.nlm.nih.gov/42607269/" target="_blank" rel="noopener">閱讀原文 →</a>
+      </div>
+    </div></div>
+
+  <div class="section"><div class="section-title"><span class="section-icon">📚</span>其他值得關注的文獻</div>
+    <div class="news-card">
+      <div class="card-header-row">
+        <span class="emoji-sm">⚫</span>
+        <span class="utility-low utility-sm">低</span>
+      </div>
+      <h3> comorbid 拔毛症與ADHD在運動反應抑制上的表現無顯著差異，顯示ADHD可能不為TTM表現異異之主因</h3>
+      <p class="journal-source">Journal of clinical psychology</p>
+      <p> comorbid TTM 和 ADHD 群在 Go/No-Go 與 Stop Signal 任務上的運動反應抑制表現，與僅有 TTM 或健康對照組無顯著差異，未支持ADHD為TTM認知缺陷之主要解釋。</p>
+      <div class="card-footer">
+        <span class="tag">成人ADHD</span><span class="tag">共病症</span><span class="tag">神經科學</span><span class="tag">執行功能</span>
+        <a href="https://pubmed.ncbi.nlm.nih.gov/42607274/" target="_blank" rel="noopener">PubMed →</a>
+      </div>
+    </div>
+    <div class="news-card">
+      <div class="card-header-row">
+        <span class="emoji-sm">🧠</span>
+        <span class="utility-high utility-sm">高</span>
+      </div>
+      <h3>白質功能連接性在預測精神病理（包括ADHD）方面提供超越灰質網路的獨立資訊，強調其在腦發展中的獨特角色</h3>
+      <p class="journal-source">Proceedings of the National Academy of Sciences of the United States of America</p>
+      <p>白質功能連接性（包括白白、灰白連接）在預測腦年齡、認知與ADHD症狀方面具有獨立預測力，即使控制灰質連接性後仍顯著，支持其為人類連接組中的獨特組成部分。</p>
+      <div class="card-footer">
+        <span class="tag">成人ADHD</span><span class="tag">神經影像學</span><span class="tag">神經科學</span><span class="tag">執行功能</span>
+        <a href="https://pubmed.ncbi.nlm.nih.gov/42574643/" target="_blank" rel="noopener">PubMed →</a>
+      </div>
+    </div>
+    <div class="news-card">
+      <div class="card-header-row">
+        <span class="emoji-sm">🌙</span>
+        <span class="utility-mid utility-sm">中</span>
+      </div>
+      <h3>性別影響神經發育正常與異常兒童的睡眠EEG模式：男孩睡眠更碎片化，快速睡眠紡錘密度較低，但此差異在NDD群中不顯著</h3>
+      <p class="journal-source">Sleep medicine</p>
+      <p>在無NDD兒童中，男孩表現更碎片化睡眠與較低快速紡錘密度；但在ASD、ADHD等神經發育異常群中，此性別差異 largely 不見，顯示NDD可能改變典型性別相關睡眠發展軌跡。</p>
+      <div class="card-footer">
+        <span class="tag">成人ADHD</span><span class="tag">睡眠障礙</span><span class="tag">女性ADHD</span><span class="tag">神經科學</span>
+        <a href="https://pubmed.ncbi.nlm.nih.gov/42542106/" target="_blank" rel="noopener">PubMed →</a>
+      </div>
+    </div>
+    <div class="news-card">
+      <div class="card-header-row">
+        <span class="emoji-sm">😴</span>
+        <span class="utility-mid utility-sm">中</span>
+      </div>
+      <h3>拖延與睡眠問題的關聯在無ADHD特質者中由夕惰性部分中介，但ADHD特質者此路徑不成立</h3>
+      <p class="journal-source">Sleep medicine</p>
+      <p>拖延與睡眠障礙顯著正相關，且此關聯部分經由夕惰性（晚型昏昏傾向）中介，但僅在無ADHD特質者中成立，顯示ADHD可能改變拖延-昏夜傾向-睡眠問題的發展路徑。</p>
+      <div class="card-footer">
+        <span class="tag">成人ADHD</span><span class="tag">睡眠障礙</span><span class="tag">情緒調節</span><span class="tag">執行功能</span>
+        <a href="https://pubmed.ncbi.nlm.nih.gov/42470901/" target="_blank" rel="noopener">PubMed →</a>
+      </div>
+    </div>
+    <div class="news-card">
+      <div class="card-header-row">
+        <span class="emoji-sm">🌍</span>
+        <span class="utility-mid utility-sm">中</span>
+      </div>
+      <h3>多元祖Background對精神疾病多基因風險分數預測準確度影響大，尤其在ADHD與ASD中準確度下降40-50%，提醒遺傳風險評估需考慮族群差異</h3>
+      <p class="journal-source">Psychiatry research</p>
+      <p>當PRS模型由歐洲祖先群體訓練但應用於多元祖先個體時，精神疾病（含ADHD）的預測準確度顯著下降（ADHD約40-50%），強調多樣化遺傳資料庫在精神醫學精準化中的重要性。</p>
+      <div class="card-footer">
+        <span class="tag">成人ADHD</span><span class="tag">神經科學</span><span class="tag">流行病學</span><span class="tag">台灣/亞洲研究</span>
+        <a href="https://pubmed.ncbi.nlm.nih.gov/42418907/" target="_blank" rel="noopener">PubMed →</a>
+      </div>
+    </div>
+    <div class="news-card">
+      <div class="card-header-row">
+        <span class="emoji-sm">💻</span>
+        <span class="utility-high utility-sm">高</span>
+      </div>
+      <h3>澳洲遠距精神醫療擴張顯著提升ADHD處方與視訊診療比例，尤其惠及女性與偏遠地區患者</h3>
+      <p class="journal-source">Psychiatry research</p>
+      <p>遠距精神醫療政策整合後，ADHD處方率從4.3%升至11.8%，視訊診療佔ADHD處方的比例從1.8%升至23.4%，顯著改善女性及偏遠地區的醫療可及性。</p>
+      <div class="card-footer">
+        <span class="tag">成人ADHD</span><span class="tag">數位健康</span><span class="tag">女性ADHD</span><span class="tag">公共衛生</span><span class="tag">藥物治療</span>
+        <a href="https://pubmed.ncbi.nlm.nih.gov/42391981/" target="_blank" rel="noopener">PubMed →</a>
+      </div>
+    </div>
+    <div class="news-card">
+      <div class="card-header-row">
+        <span class="emoji-sm">📈</span>
+        <span class="utility-high utility-sm">高</span>
+      </div>
+      <h3>童年ADHD與成人功能不良的18年縱貫關聯：持續診斷為預後不良關鍵，兄弟姐妹風險不增加</h3>
+      <p class="journal-source">Psychiatry research</p>
+      <p>童年ADHD顯著增加成人多重功能受損風險（超過60%的結果顯著較差），但僅持續診斷的ADHD組顯示更糟的精神、行為、適應及身體健康功能，顯示症狀持續性是關鍵。</p>
+      <div class="card-footer">
+        <span class="tag">成人ADHD</span><span class="tag">縱貫性研究</span><span class="tag">精神健康</span><span class="tag">執行功能</span><span class="tag">情緒調節</span><span class="tag">學業表現</span><span class="tag">職場功能</span>
+        <a href="https://pubmed.ncbi.nlm.nih.gov/42365682/" target="_blank" rel="noopener">PubMed →</a>
+      </div>
+    </div></div>
+
+  <div class="topic-section section"><div class="section-title"><span class="section-icon">📊</span>主題分佈</div>
+      <div class="topic-row">
+        <span class="topic-name">成人ADHD</span>
+        <div class="topic-bar-bg"><div class="topic-bar" style="width:100%"></div></div>
+        <span class="topic-count">8</span>
+      </div>
+      <div class="topic-row">
+        <span class="topic-name">神經影像學</span>
+        <div class="topic-bar-bg"><div class="topic-bar" style="width:25%"></div></div>
+        <span class="topic-count">2</span>
+      </div>
+      <div class="topic-row">
+        <span class="topic-name">縱貫性研究</span>
+        <div class="topic-bar-bg"><div class="topic-bar" style="width:25%"></div></div>
+        <span class="topic-count">2</span>
+      </div>
+      <div class="topic-row">
+        <span class="topic-name">睡眠障礙</span>
+        <div class="topic-bar-bg"><div class="topic-bar" style="width:38%"></div></div>
+        <span class="topic-count">3</span>
+      </div>
+      <div class="topic-row">
+        <span class="topic-name">數位健康</span>
+        <div class="topic-bar-bg"><div class="topic-bar" style="width:25%"></div></div>
+        <span class="topic-count">2</span>
+      </div>
+      <div class="topic-row">
+        <span class="topic-name">執行功能</span>
+        <div class="topic-bar-bg"><div class="topic-bar" style="width:63%"></div></div>
+        <span class="topic-count">5</span>
+      </div>
+      <div class="topic-row">
+        <span class="topic-name">情緒調節</span>
+        <div class="topic-bar-bg"><div class="topic-bar" style="width:38%"></div></div>
+        <span class="topic-count">3</span>
+      </div>
+      <div class="topic-row">
+        <span class="topic-name">學業表現</span>
+        <div class="topic-bar-bg"><div class="topic-bar" style="width:25%"></div></div>
+        <span class="topic-count">2</span>
+      </div>
+      <div class="topic-row">
+        <span class="topic-name">女性ADHD</span>
+        <div class="topic-bar-bg"><div class="topic-bar" style="width:25%"></div></div>
+        <span class="topic-count">2</span>
+      </div>
+      <div class="topic-row">
+        <span class="topic-name">公共衛生</span>
+        <div class="topic-bar-bg"><div class="topic-bar" style="width:25%"></div></div>
+        <span class="topic-count">2</span>
+      </div>
+      <div class="topic-row">
+        <span class="topic-name">共病症</span>
+        <div class="topic-bar-bg"><div class="topic-bar" style="width:13%"></div></div>
+        <span class="topic-count">1</span>
+      </div>
+      <div class="topic-row">
+        <span class="topic-name">神經科學</span>
+        <div class="topic-bar-bg"><div class="topic-bar" style="width:50%"></div></div>
+        <span class="topic-count">4</span>
+      </div>
+      <div class="topic-row">
+        <span class="topic-name">精神健康</span>
+        <div class="topic-bar-bg"><div class="topic-bar" style="width:13%"></div></div>
+        <span class="topic-count">1</span>
+      </div>
+      <div class="topic-row">
+        <span class="topic-name">心理治療</span>
+        <div class="topic-bar-bg"><div class="topic-bar" style="width:13%"></div></div>
+        <span class="topic-count">1</span>
+      </div>
+      <div class="topic-row">
+        <span class="topic-name">流行病學</span>
+        <div class="topic-bar-bg"><div class="topic-bar" style="width:13%"></div></div>
+        <span class="topic-count">1</span>
+      </div></div>
+
+  <div class="keywords-section section"><div class="section-title"><span class="section-icon">🏷️</span>關鍵字</div><div class="keywords"><span class="keyword">成人ADHD</span><span class="keyword">神經影像學</span><span class="keyword">縱貫性研究</span><span class="keyword">睡眠障礙</span><span class="keyword">數位健康</span><span class="keyword">執行功能</span></div></div>
+
+  <div class="links-section">
+    <a href="https://www.leepsyclinic.com/" class="link-card" target="_blank" rel="noopener">
+      <span class="link-icon">🏥</span>
+      <div><span class="link-name">李政洋身心診所</span><span class="link-desc">專業身心科診所，提供成人 ADHD 評估與治療</span></div>
+      <span class="link-arrow">→</span>
+    </a>
+    <a href="https://blog.leepsyclinic.com/" class="link-card" target="_blank" rel="noopener">
+      <span class="link-icon">📬</span>
+      <div><span class="link-name">訂閱電子報</span><span class="link-desc">定期收到最新身心健康資訊與研究整理</span></div>
+      <span class="link-arrow">→</span>
+    </a>
+    <a href="https://buymeacoffee.com/CYlee" class="link-card" target="_blank" rel="noopener">
+      <span class="link-icon">☕</span>
+      <div><span class="link-name">Buy Me a Coffee</span><span class="link-desc">支持本研究日報持續運作</span></div>
+      <span class="link-arrow">→</span>
+    </a>
+  </div>
+
+  <footer>
+    <span>資料來源：PubMed &middot; 分析模型：nvidia/nemotron-3-super-120b-a12b</span>
+    <span><a href="https://github.com/u8901006/Adult-ADHD">GitHub</a></span>
+  </footer>
+</div>
+</body>
+</html>
