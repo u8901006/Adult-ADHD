@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Adult ADHD Daily &middot; 成人 ADHD 文獻日報 &middot; 2026年9月18日</title>
+<meta name="description" content="2026年9月18日 成人注意力不足過動症文獻日報，由 AI 自動彙整 PubMed 最新論文"/>
+<style>
+:root{--bg:#f6f1e8;--surface:#fffaf2;--line:#d8c5ab;--text:#2b2118;--muted:#766453;--accent:#8c4f2b;--accent-soft:#ead2bf;--card-bg:color-mix(in srgb,var(--surface) 92%,white)}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+body{background:radial-gradient(circle at top,#fff6ea 0,var(--bg) 55%,#ead8c6 100%);color:var(--text);font-family:"Noto Sans TC","PingFang TC","Helvetica Neue",Arial,sans-serif;min-height:100vh;overflow-x:hidden}
+.container{position:relative;z-index:1;max-width:880px;margin:0 auto;padding:60px 32px 80px}
+header{display:flex;align-items:center;gap:16px;margin-bottom:52px;animation:fadeDown .6s ease both}
+.logo{width:48px;height:48px;border-radius:14px;background:var(--accent);display:flex;align-items:center;justify-content:center;font-size:22px;flex-shrink:0;box-shadow:0 4px 20px rgba(140,79,43,.25)}
+.header-text h1{font-size:22px;font-weight:700;color:var(--text);letter-spacing:-.3px}
+.header-meta{display:flex;gap:8px;margin-top:6px;flex-wrap:wrap;align-items:center}
+.badge{display:inline-block;padding:3px 10px;border-radius:20px;font-size:11px;letter-spacing:.3px}
+.badge-date{background:var(--accent-soft);border:1px solid var(--line);color:var(--accent)}
+.badge-count{background:rgba(140,79,43,.06);border:1px solid var(--line);color:var(--muted)}
+.badge-source{background:transparent;color:var(--muted);font-size:11px;padding:0 4px}
+.summary-card{background:var(--card-bg);border:1px solid var(--line);border-radius:24px;padding:28px 32px;margin-bottom:32px;box-shadow:0 20px 60px rgba(61,36,15,.06);animation:fadeUp .5s ease .1s both}
+.summary-card h2{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:1.6px;color:var(--accent);margin-bottom:16px}
+.summary-text{font-size:15px;line-height:1.8;color:var(--text)}
+.section{margin-bottom:36px;animation:fadeUp .5s ease both}
+.section-title{display:flex;align-items:center;gap:10px;font-size:17px;font-weight:700;color:var(--text);margin-bottom:16px;padding-bottom:12px;border-bottom:1px solid var(--line)}
+.section-icon{width:28px;height:28px;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:14px;flex-shrink:0;background:var(--accent-soft)}
+.news-card{background:var(--card-bg);border:1px solid var(--line);border-radius:24px;padding:22px 26px;margin-bottom:12px;box-shadow:0 8px 30px rgba(61,36,15,.04);transition:background .2s,border-color .2s,transform .2s}
+.news-card:hover{transform:translateY(-2px);box-shadow:0 12px 40px rgba(61,36,15,.08)}
+.news-card.featured{border-left:3px solid var(--accent)}
+.news-card.featured:hover{border-color:var(--accent)}
+.card-header{display:flex;align-items:center;gap:8px;margin-bottom:10px}
+.rank-badge{background:var(--accent);color:#fff7f0;font-weight:700;font-size:12px;padding:2px 8px;border-radius:6px}
+.emoji-icon{font-size:18px}
+.card-header-row{display:flex;align-items:center;gap:8px;margin-bottom:8px}
+.emoji-sm{font-size:14px}
+.news-card h3{font-size:15px;font-weight:600;color:var(--text);margin-bottom:8px;line-height:1.5}
+.journal-source{font-size:12px;color:var(--accent);margin-bottom:8px;opacity:.8}
+.news-card p{font-size:13.5px;line-height:1.75;color:var(--muted)}
+.utility-reason{font-size:12px!important;color:var(--accent)!important;opacity:.85;margin-top:4px}
+.card-footer{margin-top:12px;display:flex;flex-wrap:wrap;gap:6px;align-items:center}
+.tag{padding:2px 9px;background:var(--accent-soft);border-radius:999px;font-size:11px;color:var(--accent)}
+.news-card a{font-size:12px;color:var(--accent);text-decoration:none;opacity:.7;margin-left:auto}
+.news-card a:hover{opacity:1}
+.utility-high{color:#5a7a3a;font-size:11px;font-weight:600;padding:2px 8px;background:rgba(90,122,58,.1);border-radius:4px}
+.utility-mid{color:#9f7a2e;font-size:11px;font-weight:600;padding:2px 8px;background:rgba(159,122,46,.1);border-radius:4px}
+.utility-low{color:var(--muted);font-size:11px;font-weight:600;padding:2px 8px;background:rgba(118,100,83,.08);border-radius:4px}
+.utility-sm{font-size:10px}
+.pico-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:12px;padding:12px;background:rgba(255,253,249,.8);border-radius:14px;border:1px solid var(--line)}
+.pico-item{display:flex;gap:8px;align-items:baseline}
+.pico-label{font-size:10px;font-weight:700;color:#fff7f0;background:var(--accent);padding:2px 6px;border-radius:4px;flex-shrink:0}
+.pico-text{font-size:12px;color:var(--muted);line-height:1.4}
+.keywords-section{margin-bottom:36px}
+.keywords{display:flex;flex-wrap:wrap;gap:8px;margin-top:8px}
+.keyword{padding:5px 14px;background:var(--accent-soft);border:1px solid var(--line);border-radius:20px;font-size:12px;color:var(--accent);cursor:default;transition:background .2s}
+.keyword:hover{background:rgba(140,79,43,.18)}
+.topic-section{margin-bottom:36px}
+.topic-row{display:flex;align-items:center;gap:10px;margin-bottom:8px}
+.topic-name{font-size:13px;color:var(--muted);width:120px;flex-shrink:0;text-align:right}
+.topic-bar-bg{flex:1;height:8px;background:var(--line);border-radius:4px;overflow:hidden}
+.topic-bar{height:100%;background:linear-gradient(90deg,var(--accent),#c47a4a);border-radius:4px;transition:width .6s ease}
+.topic-count{font-size:12px;color:var(--accent);width:24px}
+.links-section{margin-top:48px;display:flex;flex-direction:column;gap:12px;animation:fadeUp .5s ease .4s both}
+.link-card{display:flex;align-items:center;gap:14px;padding:18px 24px;background:var(--card-bg);border:1px solid var(--line);border-radius:24px;text-decoration:none;color:var(--text);transition:all .2s;box-shadow:0 8px 30px rgba(61,36,15,.04)}
+.link-card:hover{border-color:var(--accent);transform:translateY(-2px);box-shadow:0 12px 40px rgba(61,36,15,.08)}
+.link-icon{font-size:28px;flex-shrink:0}
+.link-name{font-size:15px;font-weight:700;color:var(--text);flex:1}
+.link-desc{font-size:12px;color:var(--muted);margin-top:2px}
+.link-arrow{font-size:18px;color:var(--accent);font-weight:700}
+footer{margin-top:32px;padding-top:22px;border-top:1px solid var(--line);font-size:11.5px;color:var(--muted);display:flex;justify-content:space-between;animation:fadeUp .5s ease .5s both}
+footer a{color:var(--muted);text-decoration:none}
+footer a:hover{color:var(--accent)}
+@keyframes fadeDown{from{opacity:0;transform:translateY(-16px)}to{opacity:1;transform:translateY(0)}}
+@keyframes fadeUp{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}
+@media(max-width:600px){.container{padding:36px 18px 60px}.summary-card,.news-card{padding:20px 18px}.pico-grid{grid-template-columns:1fr}footer{flex-direction:column;gap:6px;text-align:center}.topic-name{width:80px;font-size:11px}.links-section{gap:10px}.link-card{padding:14px 18px}}
+</style>
+</head>
+<body>
+<div class="container">
+  <header>
+    <div class="logo">🧠</div>
+    <div class="header-text">
+      <h1>Adult ADHD Daily &middot; 成人 ADHD 文獻日報</h1>
+      <div class="header-meta">
+        <span class="badge badge-date">📅 2026年9月18日（週五）</span>
+        <span class="badge badge-count">📊 9 篇文獻</span>
+        <span class="badge badge-source">Powered by PubMed + NVIDIA AI</span>
+      </div>
+    </div>
+  </header>
+
+  <div class="summary-card">
+    <h2>📋 今日文獻趨勢</h2>
+    <p class="summary-text">今天的文獻聚焦於成人ADHD的藥物可及性（特別是法國哌甲酸政策改革）與長期發展軌跡，顯示政策變化對治療啟動有顯著影響，同時兒童期環境因素與成人症狀持續性之間的關聯獲得實證支持，凸顯早期干預與跨領域整合照護的重要性。</p>
+  </div>
+
+  <div class="section"><div class="section-title"><span class="section-icon">⭐</span>今日精選 TOP Picks</div>
+    <div class="news-card featured">
+      <div class="card-header">
+        <span class="rank-badge">#1</span>
+        <span class="emoji-icon">💊</span>
+        <span class="utility-high">高實用性</span>
+      </div>
+      <h3>法國藥改革促進成人哌甲酸使用：全國斷時間序列研究</h3>
+      <p class="journal-source">BMJ mental health &middot; Regulatory reform and adult methylphenidate dispensing in France: a nationwide interrupted time-series study.</p>
+      <p>2021年法國藥監改革解除對成人哌甲酸的限制後，藥物發放量立即增加10.9%並持續上升，主要由新用戶驅動，證明規範壁障是歷史治療率低的主因。</p>
+      
+      <div class="pico-grid">
+        <div class="pico-item"><span class="pico-label">P</span><span class="pico-text">2015-2024年間法國≥18歲且有至少一次社區藥局哌甲酸發放紀錄的成人（n=195,393）</span></div>
+        <div class="pico-item"><span class="pico-label">I</span><span class="pico-text">2021年11月藥監改革：解除醫院專科醫師限制，允許全科醫師開立成人適應症</span></div>
+        <div class="pico-item"><span class="pico-label">C</span><span class="pico-text">改革前（2015-2021年10月）趨勢 vs 改革後（2021年11月-2024年）水準與斜率變化</span></div>
+        <div class="pico-item"><span class="pico-label">O</span><span class="pico-text">改革後週標準化發放率立即增加10.9%，週增長率從0.2%提升至0.7%，新用戶啟動為主要驅動力</span></div>
+      </div>
+      <p class="utility-reason">💡 直接證明藥物可及性政策變化能快速提升成人ADHD治療啟動率，為各國衛生決策提供現實世界證據。</p>
+      <div class="card-footer">
+        <span class="tag">成人ADHD</span><span class="tag">藥物治療</span><span class="tag">刺激素類藥物</span><span class="tag">公共衛生</span><span class="tag">流行病學</span><span class="tag">系統性回顧</span>
+        <a href="https://pubmed.ncbi.nlm.nih.gov/42749337/" target="_blank" rel="noopener">閱讀原文 →</a>
+      </div>
+    </div>
+    <div class="news-card featured">
+      <div class="card-header">
+        <span class="rank-badge">#2</span>
+        <span class="emoji-icon">🧠</span>
+        <span class="utility-high">高實用性</span>
+      </div>
+      <h3>兒童期環境與家族因素預測ADHD 25年發展軌跡：高症狀群與虐待暴露顯著相關</h3>
+      <p class="journal-source">European child & adolescent psychiatry &middot; Predictors of developmental change in attention-deficit/hyperactivity disorder: a 25-year prospective study.</p>
+      <p>在306名參與者的25年縱貫研究中，男性、低出生體重、兒童對立行為、負面母親情緒與童年虐待（尤其性虐待）預測持續高症狀或遞減軌跡，凸顯早期環境介入的重要性。</p>
+      
+      <div class="pico-grid">
+        <div class="pico-item"><span class="pico-label">P</span><span class="pico-text">306名兒童（ baseline 年齡8歲，追蹤至23歲，後續評估至32歲），46%男性，94%白人</span></div>
+        <div class="pico-item"><span class="pico-label">I</span><span class="pico-text">無（觀察性研究）</span></div>
+        <div class="pico-item"><span class="pico-label">C</span><span class="pico-text">三種潛在軌跡：穩定高症狀（14.3%）、下降軌跡（24.7%）、穩定低症狀（61.0%）</span></div>
+        <div class="pico-item"><span class="pico-label">O</span><span class="pico-text">男性、低出生體重、兒童對立行為、負面母親情緒與童年虐待（尤其性虐待）顯著關聯於高症狀與下降軌跡；童年虐待與穩定高症狀類別關聯最緊密</span></div>
+      </div>
+      <p class="utility-reason">💡 識別可預防或早期干預的風險因子（如家庭情緒環境、虐待預防），為成人ADHD的二級預防提供發展科學依據。</p>
+      <div class="card-footer">
+        <span class="tag">成人ADHD</span><span class="tag">注意力不足過動症</span><span class="tag">共病症</span><span class="tag">憂鬱症</span><span class="tag">焦慮症</span><span class="tag">縱貫性研究</span><span class="tag">神經科學</span>
+        <a href="https://pubmed.ncbi.nlm.nih.gov/42747518/" target="_blank" rel="noopener">閱讀原文 →</a>
+      </div>
+    </div>
+    <div class="news-card featured">
+      <div class="card-header">
+        <span class="rank-badge">#3</span>
+        <span class="emoji-icon">👩‍⚕️</span>
+        <span class="utility-mid">中實用性</span>
+      </div>
+      <h3>雙極症女性合併前經期惡疾（PMDD）與ADHD：臨床與基因雙重關聯揭示易感亞群</h3>
+      <p class="journal-source">Journal of affective disorders &middot; Clinical and genetic association of comorbid provisional PMDD and ADHD in female patients with bipolar disorder.</p>
+      <p>在423名雙極症女性中，44.2%併發PMDD，其ADHD症狀嚴重度與多基因風險評分顯著相關，提示共享遺傳易感性可能定義一種複雜合併症亞型。</p>
+      
+      <div class="pico-grid">
+        <div class="pico-item"><span class="pico-label">P</span><span class="pico-text">423名被診斷為雙極症（BD）的女性患者</span></div>
+        <div class="pico-item"><span class="pico-label">I</span><span class="pico-text">無（橫斷面臨床與基因關聯分析）</span></div>
+        <div class="pico-item"><span class="pico-label">C</span><span class="pico-text">有臨床診斷的前期PMDD組（n=187） vs 無PMDD組（n=236）</span></div>
+        <div class="pico-item"><span class="pico-label">O</span><span class="pico-text">PMDD組併發暴食症與ADHD症狀評分較高；ADHD多基因風險評分與PMDD嚴重度及ADHD症狀顯著正相關（遺傳關聯）</span></div>
+      </div>
+      <p class="utility-reason">💡 提醒臨床醫師在雙極症女性中主動篩檢PMDD與ADHD併發症，並提示基因檢測可能未來有助於亞型分層與個體化治療。</p>
+      <div class="card-footer">
+        <span class="tag">成人ADHD</span><span class="tag">女性ADHD</span><span class="tag">共病症</span><span class="tag">憂鬱症</span><span class="tag">神經科學</span><span class="tag">遺傳學</span><span class="tag">系統性回顧</span>
+        <a href="https://pubmed.ncbi.nlm.nih.gov/42336326/" target="_blank" rel="noopener">閱讀原文 →</a>
+      </div>
+    </div>
+    <div class="news-card featured">
+      <div class="card-header">
+        <span class="rank-badge">#4</span>
+        <span class="emoji-icon">☣️</span>
+        <span class="utility-mid">中實用性</span>
+      </div>
+      <h3>PFAS環境毒素對腦部發育與功能的神經毒性機制綜述：與ADHD風險相關</h3>
+      <p class="journal-source">Behavioural brain research &middot; Impact of per- and polyfluoroalkyl substances (PFAS) on brain development and function.</p>
+      <p>全氟和多氟烷基物質（PFAS）經由神經發炎、氧化應激、血腦屏障破壞及內分泌擾動等多重機制，增加ADHD風險，尤其在男性與胎兒期暴露時影響較大。</p>
+      
+      <div class="pico-grid">
+        <div class="pico-item"><span class="pico-label">P</span><span class="pico-text">人類橫斷面與隊列研究（胎兒、兒童、成人）及動物模型</span></div>
+        <div class="pico-item"><span class="pico-label">I</span><span class="pico-text">PFAS暴露（環境或實驗給予）</span></div>
+        <div class="pico-item"><span class="pico-label">C</span><span class="pico-text">低暴露/對照組</span></div>
+        <div class="pico-item"><span class="pico-label">O</span><span class="pico-text">胎兒期PFAS暴露與兒童智商下降、ADHD與ASD風險增加相關；成人腦組織積聚導致突觸可塑性異常、神經興奮性增升及神經遞質（多巴胺、GABA等）失衡</span></div>
+      </div>
+      <p class="utility-reason">💡 提供環境衛生視角理解ADHD病因，強調減少關鍵發展期PFAS暴露的一級預防重要性，對公衛政策具啟發性。</p>
+      <div class="card-footer">
+        <span class="tag">成人ADHD</span><span class="tag">環境健康</span><span class="tag">神經科學</span><span class="tag">公共衛生</span><span class="tag">流行病學</span><span class="tag">神經影像學</span>
+        <a href="https://pubmed.ncbi.nlm.nih.gov/42361859/" target="_blank" rel="noopener">閱讀原文 →</a>
+      </div>
+    </div>
+    <div class="news-card featured">
+      <div class="card-header">
+        <span class="rank-badge">#5</span>
+        <span class="emoji-icon">🐟</span>
+        <span class="utility-mid">中實用性</span>
+      </div>
+      <h3>哌甲酸預暴露減少斑馬魚酒精條件位置偏好：提示其可能降低藥物獎賞感受性</h3>
+      <p class="journal-source">Behavioural brain research &middot; Prior exposure to methylphenidate attenuates ethanol-induced conditioned place preference in zebrafish.</p>
+      <p> zebrafish模型顯示，重複哌甲酸暴露後對酒精獎賞的條件位置偏好消失，提示長期使用可能改變獎賞通路，與濫用風險降低具關聯性。</p>
+      
+      <div class="pico-grid">
+        <div class="pico-item"><span class="pico-label">P</span><span class="pico-text">成年斑馬魚（Danio rerio），隨機分組n=？/組</span></div>
+        <div class="pico-item"><span class="pico-label">I</span><span class="pico-text">MPH 2mg/L，每週兩次，持續30天</span></div>
+        <div class="pico-item"><span class="pico-label">C</span><span class="pico-text">對照組（無MPH） vs MPH+酒精組</span></div>
+        <div class="pico-item"><span class="pico-label">O</span><span class="pico-text">單獨酒暴露組顯著增加條件位置偏好（CPP）；但先前接受MPH暴露組的酒精CPP反應對照組無顯著差異，提示MPH預暴露降低酒精獎賞敏感度</span></div>
+      </div>
+      <p class="utility-reason">💡 雖為動物研究，但提供機制層面證據，支持適절使用哌甲酸可能具有保護作用，減少共病物質使用風險，臨床上可緩解醫師對長期使用之慮。</p>
+      <div class="card-footer">
+        <span class="tag">成人ADHD</span><span class="tag">藥物治療</span><span class="tag">刺激素類藥物</span><span class="tag">物質使用</span><span class="tag">成癮與衝動</span><span class="tag">動物模型</span>
+        <a href="https://pubmed.ncbi.nlm.nih.gov/42385948/" target="_blank" rel="noopener">閱讀原文 →</a>
+      </div>
+    </div></div>
+
+  <div class="section"><div class="section-title"><span class="section-icon">📚</span>其他值得關注的文獻</div>
+    <div class="news-card">
+      <div class="card-header-row">
+        <span class="emoji-sm">💊</span>
+        <span class="utility-mid utility-sm">中</span>
+      </div>
+      <h3>成人ADHD興奮劑藥物減藥共識聲明的評論</h3>
+      <p class="journal-source">European neuropsychopharmacology : the journal of the European College of Neuropsychopharmacology</p>
+      <p>評論文探討成人ADHD患者興奮劑藥物減藥的臨床指導原則，強調個體化評估與監測的必要性。</p>
+      <div class="card-footer">
+        <span class="tag">成人ADHD</span><span class="tag">藥物治療</span><span class="tag">刺激素類藥物</span><span class="tag">系統性回顧</span>
+        <a href="https://pubmed.ncbi.nlm.nih.gov/42398344/" target="_blank" rel="noopener">PubMed →</a>
+      </div>
+    </div>
+    <div class="news-card">
+      <div class="card-header-row">
+        <span class="emoji-sm">⚖️</span>
+        <span class="utility-mid utility-sm">中</span>
+      </div>
+      <h3>重新檢討成人ADHD伴物質使用障礙之回歸預測因子</h3>
+      <p class="journal-source">European neuropsychopharmacology : the journal of the European College of Neuropsychopharmacology</p>
+      <p>探討預測成人ADHD併發物質使用障礙的統計模型，質疑現有變數選擇與模型穩定性，呼籲更穩健的生物心理社會變數整合。</p>
+      <div class="card-footer">
+        <span class="tag">成人ADHD</span><span class="tag">物質使用</span><span class="tag">共病症</span><span class="tag">統合分析</span>
+        <a href="https://pubmed.ncbi.nlm.nih.gov/42224770/" target="_blank" rel="noopener">PubMed →</a>
+      </div>
+    </div>
+    <div class="news-card">
+      <div class="card-header-row">
+        <span class="emoji-sm">🧬</span>
+        <span class="utility-low utility-sm">低</span>
+      </div>
+      <h3>兒時創傷與精神健康多基因分數共同塑造抑鬱症神經生物亞型：UK Biobank研究</h3>
+      <p class="journal-source">European neuropsychopharmacology : the journal of the European College of Neuropsychopharmacology</p>
+      <p>研究發現兒時創傷與ADHD、自閉症、精神分裂症等多基因分數共同影響前額葉及邊緣系統灰質，進而分離出兩種抑鬱症亞型，其中一型伴有較高環境與遺傳風險。</p>
+      <div class="card-footer">
+        <span class="tag">憂鬱症</span><span class="tag">遺傳學</span><span class="tag">神經影像學</span><span class="tag">系統性回顧</span>
+        <a href="https://pubmed.ncbi.nlm.nih.gov/42105580/" target="_blank" rel="noopener">PubMed →</a>
+      </div>
+    </div>
+    <div class="news-card">
+      <div class="card-header-row">
+        <span class="emoji-sm">🔬</span>
+        <span class="utility-low utility-sm">低</span>
+      </div>
+      <h3>NCoR1與SMRT在發育中腦中的獨立轉錄調節角色</h3>
+      <p class="journal-source">Life sciences</p>
+      <p>轉錄共抑制因子NCoR1與SMRT在腦中具有非冗餘功能：前者影響海馬學習，後者影響杏仁核基因表達，顯示其在神經發育中的區域與時期特異性調節作用。</p>
+      <div class="card-footer">
+        <span class="tag">神經科學</span><span class="tag">發育生物學</span>
+        <a href="https://pubmed.ncbi.nlm.nih.gov/42269856/" target="_blank" rel="noopener">PubMed →</a>
+      </div>
+    </div></div>
+
+  <div class="topic-section section"><div class="section-title"><span class="section-icon">📊</span>主題分佈</div>
+      <div class="topic-row">
+        <span class="topic-name">成人ADHD</span>
+        <div class="topic-bar-bg"><div class="topic-bar" style="width:100%"></div></div>
+        <span class="topic-count">5</span>
+      </div>
+      <div class="topic-row">
+        <span class="topic-name">藥物治療</span>
+        <div class="topic-bar-bg"><div class="topic-bar" style="width:60%"></div></div>
+        <span class="topic-count">3</span>
+      </div>
+      <div class="topic-row">
+        <span class="topic-name">共病症</span>
+        <div class="topic-bar-bg"><div class="topic-bar" style="width:40%"></div></div>
+        <span class="topic-count">2</span>
+      </div>
+      <div class="topic-row">
+        <span class="topic-name">公共衛生</span>
+        <div class="topic-bar-bg"><div class="topic-bar" style="width:40%"></div></div>
+        <span class="topic-count">2</span>
+      </div>
+      <div class="topic-row">
+        <span class="topic-name">神經科學</span>
+        <div class="topic-bar-bg"><div class="topic-bar" style="width:40%"></div></div>
+        <span class="topic-count">2</span>
+      </div>
+      <div class="topic-row">
+        <span class="topic-name">女性ADHD</span>
+        <div class="topic-bar-bg"><div class="topic-bar" style="width:20%"></div></div>
+        <span class="topic-count">1</span>
+      </div>
+      <div class="topic-row">
+        <span class="topic-name">物質使用</span>
+        <div class="topic-bar-bg"><div class="topic-bar" style="width:20%"></div></div>
+        <span class="topic-count">1</span>
+      </div>
+      <div class="topic-row">
+        <span class="topic-name">環境健康</span>
+        <div class="topic-bar-bg"><div class="topic-bar" style="width:20%"></div></div>
+        <span class="topic-count">1</span>
+      </div>
+      <div class="topic-row">
+        <span class="topic-name">遺傳學</span>
+        <div class="topic-bar-bg"><div class="topic-bar" style="width:20%"></div></div>
+        <span class="topic-count">1</span>
+      </div>
+      <div class="topic-row">
+        <span class="topic-name">系統性回顧</span>
+        <div class="topic-bar-bg"><div class="topic-bar" style="width:40%"></div></div>
+        <span class="topic-count">2</span>
+      </div></div>
+
+  <div class="keywords-section section"><div class="section-title"><span class="section-icon">🏷️</span>關鍵字</div><div class="keywords"><span class="keyword">成人ADHD</span><span class="keyword">藥物可及性</span><span class="keyword">環境毒素</span><span class="keyword">發展軌跡</span><span class="keyword">共病PMDD</span><span class="keyword">獎賞機制</span><span class="keyword">多基因風險</span></div></div>
+
+  <div class="links-section">
+    <a href="https://www.leepsyclinic.com/" class="link-card" target="_blank" rel="noopener">
+      <span class="link-icon">🏥</span>
+      <div><span class="link-name">李政洋身心診所</span><span class="link-desc">專業身心科診所，提供成人 ADHD 評估與治療</span></div>
+      <span class="link-arrow">→</span>
+    </a>
+    <a href="https://blog.leepsyclinic.com/" class="link-card" target="_blank" rel="noopener">
+      <span class="link-icon">📬</span>
+      <div><span class="link-name">訂閱電子報</span><span class="link-desc">定期收到最新身心健康資訊與研究整理</span></div>
+      <span class="link-arrow">→</span>
+    </a>
+    <a href="https://buymeacoffee.com/CYlee" class="link-card" target="_blank" rel="noopener">
+      <span class="link-icon">☕</span>
+      <div><span class="link-name">Buy Me a Coffee</span><span class="link-desc">支持本研究日報持續運作</span></div>
+      <span class="link-arrow">→</span>
+    </a>
+  </div>
+
+  <footer>
+    <span>資料來源：PubMed &middot; 分析模型：nvidia/nemotron-3-super-120b-a12b</span>
+    <span><a href="https://github.com/u8901006/Adult-ADHD">GitHub</a></span>
+  </footer>
+</div>
+</body>
+</html>
