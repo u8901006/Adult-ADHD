@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Adult ADHD Daily &middot; 成人 ADHD 文獻日報 &middot; 2026年11月26日</title>
+<meta name="description" content="2026年11月26日 成人注意力不足過動症文獻日報，由 AI 自動彙整 PubMed 最新論文"/>
+<style>
+:root{--bg:#f6f1e8;--surface:#fffaf2;--line:#d8c5ab;--text:#2b2118;--muted:#766453;--accent:#8c4f2b;--accent-soft:#ead2bf;--card-bg:color-mix(in srgb,var(--surface) 92%,white)}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+body{background:radial-gradient(circle at top,#fff6ea 0,var(--bg) 55%,#ead8c6 100%);color:var(--text);font-family:"Noto Sans TC","PingFang TC","Helvetica Neue",Arial,sans-serif;min-height:100vh;overflow-x:hidden}
+.container{position:relative;z-index:1;max-width:880px;margin:0 auto;padding:60px 32px 80px}
+header{display:flex;align-items:center;gap:16px;margin-bottom:52px;animation:fadeDown .6s ease both}
+.logo{width:48px;height:48px;border-radius:14px;background:var(--accent);display:flex;align-items:center;justify-content:center;font-size:22px;flex-shrink:0;box-shadow:0 4px 20px rgba(140,79,43,.25)}
+.header-text h1{font-size:22px;font-weight:700;color:var(--text);letter-spacing:-.3px}
+.header-meta{display:flex;gap:8px;margin-top:6px;flex-wrap:wrap;align-items:center}
+.badge{display:inline-block;padding:3px 10px;border-radius:20px;font-size:11px;letter-spacing:.3px}
+.badge-date{background:var(--accent-soft);border:1px solid var(--line);color:var(--accent)}
+.badge-count{background:rgba(140,79,43,.06);border:1px solid var(--line);color:var(--muted)}
+.badge-source{background:transparent;color:var(--muted);font-size:11px;padding:0 4px}
+.summary-card{background:var(--card-bg);border:1px solid var(--line);border-radius:24px;padding:28px 32px;margin-bottom:32px;box-shadow:0 20px 60px rgba(61,36,15,.06);animation:fadeUp .5s ease .1s both}
+.summary-card h2{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:1.6px;color:var(--accent);margin-bottom:16px}
+.summary-text{font-size:15px;line-height:1.8;color:var(--text)}
+.section{margin-bottom:36px;animation:fadeUp .5s ease both}
+.section-title{display:flex;align-items:center;gap:10px;font-size:17px;font-weight:700;color:var(--text);margin-bottom:16px;padding-bottom:12px;border-bottom:1px solid var(--line)}
+.section-icon{width:28px;height:28px;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:14px;flex-shrink:0;background:var(--accent-soft)}
+.news-card{background:var(--card-bg);border:1px solid var(--line);border-radius:24px;padding:22px 26px;margin-bottom:12px;box-shadow:0 8px 30px rgba(61,36,15,.04);transition:background .2s,border-color .2s,transform .2s}
+.news-card:hover{transform:translateY(-2px);box-shadow:0 12px 40px rgba(61,36,15,.08)}
+.news-card.featured{border-left:3px solid var(--accent)}
+.news-card.featured:hover{border-color:var(--accent)}
+.card-header{display:flex;align-items:center;gap:8px;margin-bottom:10px}
+.rank-badge{background:var(--accent);color:#fff7f0;font-weight:700;font-size:12px;padding:2px 8px;border-radius:6px}
+.emoji-icon{font-size:18px}
+.card-header-row{display:flex;align-items:center;gap:8px;margin-bottom:8px}
+.emoji-sm{font-size:14px}
+.news-card h3{font-size:15px;font-weight:600;color:var(--text);margin-bottom:8px;line-height:1.5}
+.journal-source{font-size:12px;color:var(--accent);margin-bottom:8px;opacity:.8}
+.news-card p{font-size:13.5px;line-height:1.75;color:var(--muted)}
+.utility-reason{font-size:12px!important;color:var(--accent)!important;opacity:.85;margin-top:4px}
+.card-footer{margin-top:12px;display:flex;flex-wrap:wrap;gap:6px;align-items:center}
+.tag{padding:2px 9px;background:var(--accent-soft);border-radius:999px;font-size:11px;color:var(--accent)}
+.news-card a{font-size:12px;color:var(--accent);text-decoration:none;opacity:.7;margin-left:auto}
+.news-card a:hover{opacity:1}
+.utility-high{color:#5a7a3a;font-size:11px;font-weight:600;padding:2px 8px;background:rgba(90,122,58,.1);border-radius:4px}
+.utility-mid{color:#9f7a2e;font-size:11px;font-weight:600;padding:2px 8px;background:rgba(159,122,46,.1);border-radius:4px}
+.utility-low{color:var(--muted);font-size:11px;font-weight:600;padding:2px 8px;background:rgba(118,100,83,.08);border-radius:4px}
+.utility-sm{font-size:10px}
+.pico-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:12px;padding:12px;background:rgba(255,253,249,.8);border-radius:14px;border:1px solid var(--line)}
+.pico-item{display:flex;gap:8px;align-items:baseline}
+.pico-label{font-size:10px;font-weight:700;color:#fff7f0;background:var(--accent);padding:2px 6px;border-radius:4px;flex-shrink:0}
+.pico-text{font-size:12px;color:var(--muted);line-height:1.4}
+.keywords-section{margin-bottom:36px}
+.keywords{display:flex;flex-wrap:wrap;gap:8px;margin-top:8px}
+.keyword{padding:5px 14px;background:var(--accent-soft);border:1px solid var(--line);border-radius:20px;font-size:12px;color:var(--accent);cursor:default;transition:background .2s}
+.keyword:hover{background:rgba(140,79,43,.18)}
+.topic-section{margin-bottom:36px}
+.topic-row{display:flex;align-items:center;gap:10px;margin-bottom:8px}
+.topic-name{font-size:13px;color:var(--muted);width:120px;flex-shrink:0;text-align:right}
+.topic-bar-bg{flex:1;height:8px;background:var(--line);border-radius:4px;overflow:hidden}
+.topic-bar{height:100%;background:linear-gradient(90deg,var(--accent),#c47a4a);border-radius:4px;transition:width .6s ease}
+.topic-count{font-size:12px;color:var(--accent);width:24px}
+.links-section{margin-top:48px;display:flex;flex-direction:column;gap:12px;animation:fadeUp .5s ease .4s both}
+.link-card{display:flex;align-items:center;gap:14px;padding:18px 24px;background:var(--card-bg);border:1px solid var(--line);border-radius:24px;text-decoration:none;color:var(--text);transition:all .2s;box-shadow:0 8px 30px rgba(61,36,15,.04)}
+.link-card:hover{border-color:var(--accent);transform:translateY(-2px);box-shadow:0 12px 40px rgba(61,36,15,.08)}
+.link-icon{font-size:28px;flex-shrink:0}
+.link-name{font-size:15px;font-weight:700;color:var(--text);flex:1}
+.link-desc{font-size:12px;color:var(--muted);margin-top:2px}
+.link-arrow{font-size:18px;color:var(--accent);font-weight:700}
+footer{margin-top:32px;padding-top:22px;border-top:1px solid var(--line);font-size:11.5px;color:var(--muted);display:flex;justify-content:space-between;animation:fadeUp .5s ease .5s both}
+footer a{color:var(--muted);text-decoration:none}
+footer a:hover{color:var(--accent)}
+@keyframes fadeDown{from{opacity:0;transform:translateY(-16px)}to{opacity:1;transform:translateY(0)}}
+@keyframes fadeUp{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}
+@media(max-width:600px){.container{padding:36px 18px 60px}.summary-card,.news-card{padding:20px 18px}.pico-grid{grid-template-columns:1fr}footer{flex-direction:column;gap:6px;text-align:center}.topic-name{width:80px;font-size:11px}.links-section{gap:10px}.link-card{padding:14px 18px}}
+</style>
+</head>
+<body>
+<div class="container">
+  <header>
+    <div class="logo">🧠</div>
+    <div class="header-text">
+      <h1>Adult ADHD Daily &middot; 成人 ADHD 文獻日報</h1>
+      <div class="header-meta">
+        <span class="badge badge-date">📅 2026年11月26日（週四）</span>
+        <span class="badge badge-count">📊 14 篇文獻</span>
+        <span class="badge badge-source">Powered by PubMed + NVIDIA AI</span>
+      </div>
+    </div>
+  </header>
+
+  <div class="summary-card">
+    <h2>📋 今日文獻趨勢</h2>
+    <p class="summary-text">本日文獻聚焦於成人ADHD的情緒調節困難、診斷與治療偏好、以及症狀演變軌跡。新研究確認情緒症狀與核心ADHD構面有明確區分，並探討認知行為治療在提升執行功能上的實際效益，同時也檢視藥物治療在特殊人群（如軍隊、產後）中的表現。</p>
+  </div>
+
+  <div class="section"><div class="section-title"><span class="section-icon">⭐</span>今日精選 TOP Picks</div>
+    <div class="news-card featured">
+      <div class="card-header">
+        <span class="rank-badge">#1</span>
+        <span class="emoji-icon">🧠</span>
+        <span class="utility-high">高實用性</span>
+      </div>
+      <h3>情緒調節在成人ADHD中的構面結構探討</h3>
+      <p class="journal-source">Journal of attention disorders &middot; Emotional Dysregulation, Emotional Lability, Emotional Impulsiveness and Emotion in Adults with ADHD: Do All Scales Define the Same Concept?</p>
+      <p>PCA分析揭示成人ADHD患者的情緒症狀並非單一光譜，而是劃分為控制力/憤怒困難、情緒困擾與情緒過度反應/情緒變化三個獨立子域，與一般情緒不穩定量表無顯相關，強調臨床評估需使用專用量表。</p>
+      
+      <div class="pico-grid">
+        <div class="pico-item"><span class="pico-label">P</span><span class="pico-text">尋求診斷評估之成人ADHD患者 (N=1240)</span></div>
+        <div class="pico-item"><span class="pico-label">I</span><span class="pico-text">情緒症狀評估 (ED, EL, EI, E 量表)</span></div>
+        <div class="pico-item"><span class="pico-label">C</span><span class="pico-text">情緒不穩定對照量表 (ALS-18)</span></div>
+        <div class="pico-item"><span class="pico-label">O</span><span class="pico-text">識別出三個獨特的情緒症狀構面，區別自一般情緒不穩定</span></div>
+      </div>
+      <p class="utility-reason">💡 直接指導臨床評估工具的選擇，確保情緒問題被精準捕捉與歸類，避免誤診。</p>
+      <div class="card-footer">
+        <span class="tag">成人ADHD</span><span class="tag">情緒調節</span><span class="tag">診斷評估</span><span class="tag">情緒症狀構面</span>
+        <a href="https://pubmed.ncbi.nlm.nih.gov/42643027/" target="_blank" rel="noopener">閱讀原文 →</a>
+      </div>
+    </div>
+    <div class="news-card featured">
+      <div class="card-header">
+        <span class="rank-badge">#2</span>
+        <span class="emoji-icon">💊</span>
+        <span class="utility-high">高實用性</span>
+      </div>
+      <h3>生藥物治療對成人ADHD功能障礙的影響</h3>
+      <p class="journal-source">Journal of attention disorders &middot; An Exploratory Study of Functional Outcome in Stimulant Treatment of ADHD in Adults</p>
+      <p>甲基苯丙胺治療顯著改善成人ADHD患者的工作功能，約40%的短期藥物受試者達到功能改善臨界點；隨時間推移，所有功能域皆顯示 clinically-relevant 改善，證明症狀改善與功能改善呈近乎同步進行。</p>
+      
+      <div class="pico-grid">
+        <div class="pico-item"><span class="pico-label">P</span><span class="pico-text">接受甲基苯丙胺治療之成人ADHD患者 (N=351)</span></div>
+        <div class="pico-item"><span class="pico-label">I</span><span class="pico-text">短期 double-blind 藥物治療 隆後開放標記期</span></div>
+        <div class="pico-item"><span class="pico-label">C</span><span class="pico-text">安慰劑對照</span></div>
+        <div class="pico-item"><span class="pico-label">O</span><span class="pico-text">工作功能改善與症狀變化的相關性與時程</span></div>
+      </div>
+      <p class="utility-reason">💡 提供實證證據證明藥物治療能轉化為具體的日常功能提升，支援「先治症狀，功能隨之改善」的臨床路徑。</p>
+      <div class="card-footer">
+        <span class="tag">成人ADHD</span><span class="tag">藥物治療</span><span class="tag">刺激素類藥物</span><span class="tag">功能改善</span><span class="tag">WFIRS</span>
+        <a href="https://pubmed.ncbi.nlm.nih.gov/42084377/" target="_blank" rel="noopener">閱讀原文 →</a>
+      </div>
+    </div>
+    <div class="news-card featured">
+      <div class="card-header">
+        <span class="rank-badge">#3</span>
+        <span class="emoji-icon">📚</span>
+        <span class="utility-mid">中實用性</span>
+      </div>
+      <h3>認知行為治療提升成人ADHD執行功能的可行性</h3>
+      <p class="journal-source">Journal of attention disorders &middot; Feasibility and Acceptability of Group-Based Cognitive-Behavioral Intervention for Executive Self-Management in College Students With ADHD: Replication in a Public Urban Setting</p>
+      <p>12週團體CBT介入顯著降低自我與醫師評估的注意力不足症狀，參與者報告執行功能（如時間管理、組織規劃）有實質改善，且可在公立大學環境中成功複刻，證實此介入為大學生ADHD的可行選項。</p>
+      
+      <div class="pico-grid">
+        <div class="pico-item"><span class="pico-label">P</span><span class="pico-text">公立大學 ADHD 學生 (N=41)</span></div>
+        <div class="pico-item"><span class="pico-label">I</span><span class="pico-text">12週團體認知行為治療 (CBT) - 執行功能訓練</span></div>
+        <div class="pico-item"><span class="pico-label">C</span><span class="pico-text">預處理基準比較</span></div>
+        <div class="pico-item"><span class="pico-label">O</span><span class="pico-text">注意力不足症狀減少與執行功能提升</span></div>
+      </div>
+      <p class="utility-reason">💡 提供非藥物治療選項，特別適合重視技能訓練或無法耐受藥物副作用的學生，但實施需專業治療師。</p>
+      <div class="card-footer">
+        <span class="tag">成人ADHD</span><span class="tag">CBT認知行為治療</span><span class="tag">執行功能</span><span class="tag">學業表現</span><span class="tag">大學生</span>
+        <a href="https://pubmed.ncbi.nlm.nih.gov/42312718/" target="_blank" rel="noopener">閱讀原文 →</a>
+      </div>
+    </div>
+    <div class="news-card featured">
+      <div class="card-header">
+        <span class="rank-badge">#4</span>
+        <span class="emoji-icon">📝</span>
+        <span class="utility-high">高實用性</span>
+      </div>
+      <h3>成人ADHD情緒症狀的量表效度驗證</h3>
+      <p class="journal-source">Journal of attention disorders &middot; Emotional Dysregulation, Emotional Lability, Emotional Impulsiveness and Emotion in Adults with ADHD: Do All Scales Define the Same Concept?</p>
+      <p>超過1200名尋求診斷的成人中，ADHD特有的情緒症狀（憤怒控制困難、情緒困擾、情緒過度反應）經 principal component analysis 識別出三個獨立因子，顯示與一般情緒不穩定量表（ALS-18）區分明確，提倡在評估中整合情緒項目。</p>
+      
+      <div class="pico-grid">
+        <div class="pico-item"><span class="pico-label">P</span><span class="pico-text">尋求ADHD診斷之成人 (N=1240)</span></div>
+        <div class="pico-item"><span class="pico-label">I</span><span class="pico-text">情緒症狀量表評估</span></div>
+        <div class="pico-item"><span class="pico-label">C</span><span class="pico-text">Affective Lability Scale (ALS-18)</span></div>
+        <div class="pico-item"><span class="pico-label">O</span><span class="pico-text">三因子結構驗證與區別效度</span></div>
+      </div>
+      <p class="utility-reason">💡 有助於臨床醫護區分 ADHD 離屬情緒症狀與併存的情緒障礙，指導精準藥物或心理治療決策。</p>
+      <div class="card-footer">
+        <span class="tag">成人ADHD</span><span class="tag">情緒調節</span><span class="tag">診斷評估</span><span class="tag">共病症</span>
+        <a href="https://pubmed.ncbi.nlm.nih.gov/42643027/" target="_blank" rel="noopener">閱讀原文 →</a>
+      </div>
+    </div>
+    <div class="news-card featured">
+      <div class="card-header">
+        <span class="rank-badge">#5</span>
+        <span class="emoji-icon">🎖️</span>
+        <span class="utility-mid">中實用性</span>
+      </div>
+      <h3>軍事環境下成人ADHD的職場功能表現</h3>
+      <p class="journal-source">Journal of attention disorders &middot; Attention Deficit Hyperactivity Disorder (ADHD) in Military Contexts with regard to Psychosocial and Occupational Outcomes: A Scoping Review</p>
+      <p>越野審查綜合現有研究，確認ADHD與創傷後應激、憂鬱、物質使用共病風險顯著升高，但職場表現（晉升、留任）在妥適支援下可與同儕相近，強調需要肯定神經多樣性的工作環境。</p>
+      
+      <div class="pico-grid">
+        <div class="pico-item"><span class="pico-label">P</span><span class="pico-text">軍事人員及退伍軍人</span></div>
+        <div class="pico-item"><span class="pico-label">I</span><span class="pico-text">職場支援與調適</span></div>
+        <div class="pico-item"><span class="pico-label">C</span><span class="pico-text">無ADHD同儕</span></div>
+        <div class="pico-item"><span class="pico-label">O</span><span class="pico-text"> psychosocial 與 occupational 結果的系統性歸納</span></div>
+      </div>
+      <p class="utility-reason">💡 提供徵證依據，說明在結構化、支援完善的環境中，ADHD 者亦具競爭力，有助於職場申請合理調適。</p>
+      <div class="card-footer">
+        <span class="tag">成人ADHD</span><span class="tag">職場功能</span><span class="tag">共病症</span><span class="tag">公共衛生</span><span class="tag">神經多樣性</span>
+        <a href="https://pubmed.ncbi.nlm.nih.gov/42216782/" target="_blank" rel="noopener">閱讀原文 →</a>
+      </div>
+    </div>
+    <div class="news-card featured">
+      <div class="card-header">
+        <span class="rank-badge">#6</span>
+        <span class="emoji-icon">👶</span>
+        <span class="utility-mid">中實用性</span>
+      </div>
+      <h3>妊娠期炎症與兒童ADHD症狀的緩衝效應</h3>
+      <p class="journal-source">Journal of child psychology and psychiatry, and allied disciplines &middot; Caregiver sensitivity moderates effects of gestational inflammation on child ADHD symptoms</p>
+      <p>產前炎症與兒童ADHD症狀呈正相關，但母親在嬰兒期展現的敏感照護可作為顯著的緩衝因子，降低風險，凸顯早期親子互動在預防ADHD惡化中的重要性。</p>
+      
+      <div class="pico-grid">
+        <div class="pico-item"><span class="pico-label">P</span><span class="pico-text">母子對 (N=302)</span></div>
+        <div class="pico-item"><span class="pico-label">I</span><span class="pico-text">產前炎症與產後敏感照護</span></div>
+        <div class="pico-item"><span class="pico-label">C</span><span class="pico-text">低敏感 versus 高敏子群</span></div>
+        <div class="pico-item"><span class="pico-label">O</span><span class="pico-text">兒童36個月ADHD症狀之變異解釋</span></div>
+      </div>
+      <p class="utility-reason">💡 轉化為可操作的預防建議：提倡產前抗炎與產後親子互動訓練，具有長期公共衛生意義。</p>
+      <div class="card-footer">
+        <span class="tag">成人ADHD</span><span class="tag">孕期用藥</span><span class="tag">共病症</span><span class="tag">早期介入</span><span class="tag">預防</span>
+        <a href="https://pubmed.ncbi.nlm.nih.gov/42536127/" target="_blank" rel="noopener">閱讀原文 →</a>
+      </div>
+    </div>
+    <div class="news-card featured">
+      <div class="card-header">
+        <span class="rank-badge">#7</span>
+        <span class="emoji-icon">🩹</span>
+        <span class="utility-mid">中實用性</span>
+      </div>
+      <h3> childhood 創傷對成人ADHD功能之影響</h3>
+      <p class="journal-source">European psychiatry : the journal of the Association of European Psychiatrists &middot; Childhood Trauma and Functional Impairment in Adult ADHD: Mediating Roles of Symptoms and Depression</p>
+      <p>童年創傷透過加劇ADHD症狀與抑鬱，間接增加成人功能受損風險，強調在 ADHD 診療中篩查創傷史對改善長期預後的重要性。</p>
+      
+      <div class="pico-grid">
+        <div class="pico-item"><span class="pico-label">P</span><span class="pico-text">成人ADHD患者</span></div>
+        <div class="pico-item"><span class="pico-label">I</span><span class="pico-text">童年創傷評估</span></div>
+        <div class="pico-item"><span class="pico-label">C</span><span class="pico-text">無創傷對照組</span></div>
+        <div class="pico-item"><span class="pico-label">O</span><span class="pico-text">功能受損中症狀與憂鬱之中介效應</span></div>
+      </div>
+      <p class="utility-reason">💡 提醒臨床醫護在治療成人ADHD時，必須併評估創傷經歷，以設計整合創傷照護的治療方案。</p>
+      <div class="card-footer">
+        <span class="tag">成人ADHD</span><span class="tag">共病症</span><span class="tag">憂鬱症</span><span class="tag">創傷照護</span><span class="tag">功能受損</span>
+        <a href="https://pubmed.ncbi.nlm.nih.gov/43079956/" target="_blank" rel="noopener">閱讀原文 →</a>
+      </div>
+    </div></div>
+
+  <div class="section"><div class="section-title"><span class="section-icon">📚</span>其他值得關注的文獻</div>
+    <div class="news-card">
+      <div class="card-header-row">
+        <span class="emoji-sm">📖</span>
+        <span class="utility-low utility-sm">低</span>
+      </div>
+      <h3>注意力缺陷過動症 diagnose surge 的年輕成人生活影響</h3>
+      <p class="journal-source">BMC psychiatry</p>
+      <p>對於只具有輕度至中度功能受損、無併症的年輕成人而言，早期ADHD診斷主要被描述為提供自我認知、社群認同與重要支援（如藥物、學適應）的機會，少數人覺得被標籤化，但整體影響為 supportive。</p>
+      <div class="card-footer">
+        <span class="tag">成人ADHD</span><span class="tag">診斷評估</span><span class="tag"> qualitative study</span><span class="tag">年輕成人</span>
+        <a href="https://pubmed.ncbi.nlm.nih.gov/43079351/" target="_blank" rel="noopener">PubMed →</a>
+      </div>
+    </div>
+    <div class="news-card">
+      <div class="card-header-row">
+        <span class="emoji-sm">🩺</span>
+        <span class="utility-low utility-sm">低</span>
+      </div>
+      <h3>嬰兒期出生合併缺氧與青少年抑鬱症狀之路徑</h3>
+      <p class="journal-source">Journal of affective disorders</p>
+      <p>產前缺氧顯著增加兒童期內向症狀，而非外向症狀，而兒童期內向症狀又預測青少年期抑鬱症狀，證明出生合併症透過情緒發展路徑影響後來心理健康。</p>
+      <div class="card-footer">
+        <span class="tag">共病症</span><span class="tag">憂鬱症</span><span class="tag">神經科學</span><span class="tag">出生風險因子</span>
+        <a href="https://pubmed.ncbi.nlm.nih.gov/42810626/" target="_blank" rel="noopener">PubMed →</a>
+      </div>
+    </div>
+    <div class="news-card">
+      <div class="card-header-row">
+        <span class="emoji-sm">😴</span>
+        <span class="utility-low utility-sm">低</span>
+      </div>
+      <h3>idiopathic hypersomnia 多學科介入之行為畫像</h3>
+      <p class="journal-source">Sleep medicine</p>
+      <p>雖非ADHD研究，但發現IH患者常伴有被懷疑ADHD的特徵（9/20），多學科介入（CBT-H、生理治療）顯著改善日間功能，識別出興奮過度與抑郁閉鎖兩種行為畫像，對睡眠與ADHD 共病有參考意義。</p>
+      <div class="card-footer">
+        <span class="tag">睡眠障礙</span><span class="tag">行為畫像</span><span class="tag">CBT</span><span class="tag">共病症</span>
+        <a href="https://pubmed.ncbi.nlm.nih.gov/42715883/" target="_blank" rel="noopener">PubMed →</a>
+      </div>
+    </div>
+    <div class="news-card">
+      <div class="card-header-row">
+        <span class="emoji-sm">📈</span>
+        <span class="utility-mid utility-sm">中</span>
+      </div>
+      <h3>青少年ADHD症狀與情緒問題共發展軌跡</h3>
+      <p class="journal-source">Journal of child psychology and psychiatry, and allied disciplines</p>
+      <p> jointly trajectory analysis 發現四種症狀軌跡：低低、高減低ADHD+低情緒、中減低ADHD+增加情緒、增加ADHD+增加情緒。隨ADHD症狀增加者成年後教育程度與社經地位最差，情緒問題增加不一定伴隨ADHD增加。</p>
+      <div class="card-footer">
+        <span class="tag">成人ADHD</span><span class="tag">縱貫性研究</span><span class="tag">情緒問題</span><span class="tag">預後預測</span><span class="tag">青少年</span>
+        <a href="https://pubmed.ncbi.nlm.nih.gov/42381280/" target="_blank" rel="noopener">PubMed →</a>
+      </div>
+    </div>
+    <div class="news-card">
+      <div class="card-header-row">
+        <span class="emoji-sm">💼</span>
+        <span class="utility-mid utility-sm">中</span>
+      </div>
+      <h3>大學生ADHD治療可接受性與介入偏好</h3>
+      <p class="journal-source">Journal of attention disorders</p>
+      <p>行為介入被評為最高可接受，其次為組織策略；情緒類介入最低。主題分析顯示學生希望獲得「教我自我協助」與「一站式」支援，揭示了大學環境下治療偏好的多元性與個體化需求。</p>
+      <div class="card-footer">
+        <span class="tag">成人ADHD</span><span class="tag">大學生</span><span class="tag">治療可接受性</span><span class="tag">介入偏好</span><span class="tag">混合方法</span>
+        <a href="https://pubmed.ncbi.nlm.nih.gov/42483873/" target="_blank" rel="noopener">PubMed →</a>
+      </div>
+    </div>
+    <div class="news-card">
+      <div class="card-header-row">
+        <span class="emoji-sm">⚡</span>
+        <span class="utility-mid utility-sm">中</span>
+      </div>
+      <h3>挫折對成人ADHD attentional control 的調節效應</h3>
+      <p class="journal-source">Journal of attention disorders</p>
+      <p> ERP 研究發現，挫折情境顯著惡化 ADHD 者的錯誤率，且誘發獨特的腦電標誌（P3, LPP），表明挫折會延長情緒動機處理，並破壞注意力分配，提供生物標誌證據支援臨床上的情緒調節干預。</p>
+      <div class="card-footer">
+        <span class="tag">成人ADHD</span><span class="tag">情緒調節</span><span class="tag">神經影像學</span><span class="tag">ERP</span><span class="tag">認知機制</span>
+        <a href="https://pubmed.ncbi.nlm.nih.gov/42477904/" target="_blank" rel="noopener">PubMed →</a>
+      </div>
+    </div>
+    <div class="news-card">
+      <div class="card-header-row">
+        <span class="emoji-sm">🛡️</span>
+        <span class="utility-mid utility-sm">中</span>
+      </div>
+      <h3>職場ADHD症狀對軍人職能之影響</h3>
+      <p class="journal-source">Journal of attention disorders</p>
+      <p>大規模隊列研究發現，有ADHD診斷的海軍陸戰隊士官在晉升、部署與留任率上與無ADHD同儕無顯著差異，受治療者甚至表現更好，支持在結構化軍事環境中，適當調適不會損害職能表現。</p>
+      <div class="card-footer">
+        <span class="tag">成人ADHD</span><span class="tag">職場功能</span><span class="tag">軍事環境</span><span class="tag">實證醫學</span>
+        <a href="https://pubmed.ncbi.nlm.nih.gov/42076884/" target="_blank" rel="noopener">PubMed →</a>
+      </div>
+    </div></div>
+
+  <div class="topic-section section"><div class="section-title"><span class="section-icon">📊</span>主題分佈</div>
+      <div class="topic-row">
+        <span class="topic-name">成人ADHD</span>
+        <div class="topic-bar-bg"><div class="topic-bar" style="width:100%"></div></div>
+        <span class="topic-count">7</span>
+      </div>
+      <div class="topic-row">
+        <span class="topic-name">情緒調節</span>
+        <div class="topic-bar-bg"><div class="topic-bar" style="width:71%"></div></div>
+        <span class="topic-count">5</span>
+      </div>
+      <div class="topic-row">
+        <span class="topic-name">藥物治療</span>
+        <div class="topic-bar-bg"><div class="topic-bar" style="width:57%"></div></div>
+        <span class="topic-count">4</span>
+      </div>
+      <div class="topic-row">
+        <span class="topic-name">執行功能</span>
+        <div class="topic-bar-bg"><div class="topic-bar" style="width:43%"></div></div>
+        <span class="topic-count">3</span>
+      </div>
+      <div class="topic-row">
+        <span class="topic-name">共病症</span>
+        <div class="topic-bar-bg"><div class="topic-bar" style="width:43%"></div></div>
+        <span class="topic-count">3</span>
+      </div></div>
+
+  <div class="keywords-section section"><div class="section-title"><span class="section-icon">🏷️</span>關鍵字</div><div class="keywords"><span class="keyword">成人ADHD</span><span class="keyword">情緒調節</span><span class="keyword">藥物治療</span><span class="keyword">CBT</span><span class="keyword">執行功能</span><span class="keyword">臨床實務</span></div></div>
+
+  <div class="links-section">
+    <a href="https://www.leepsyclinic.com/" class="link-card" target="_blank" rel="noopener">
+      <span class="link-icon">🏥</span>
+      <div><span class="link-name">李政洋身心診所</span><span class="link-desc">專業身心科診所，提供成人 ADHD 評估與治療</span></div>
+      <span class="link-arrow">→</span>
+    </a>
+    <a href="https://blog.leepsyclinic.com/" class="link-card" target="_blank" rel="noopener">
+      <span class="link-icon">📬</span>
+      <div><span class="link-name">訂閱電子報</span><span class="link-desc">定期收到最新身心健康資訊與研究整理</span></div>
+      <span class="link-arrow">→</span>
+    </a>
+    <a href="https://buymeacoffee.com/CYlee" class="link-card" target="_blank" rel="noopener">
+      <span class="link-icon">☕</span>
+      <div><span class="link-name">Buy Me a Coffee</span><span class="link-desc">支持本研究日報持續運作</span></div>
+      <span class="link-arrow">→</span>
+    </a>
+  </div>
+
+  <footer>
+    <span>資料來源：PubMed &middot; 分析模型：nvidia/nemotron-3.5-lightning-30b-a3b</span>
+    <span><a href="https://github.com/u8901006/Adult-ADHD">GitHub</a></span>
+  </footer>
+</div>
+</body>
+</html>
